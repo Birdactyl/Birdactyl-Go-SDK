@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.21.12
-// source: Birdactyl-Go-SDK-main/proto/plugin.proto
+// source: plugin.proto
 
 package proto
 
@@ -54,11 +54,11 @@ func (x MixinResponse_Action) String() string {
 }
 
 func (MixinResponse_Action) Descriptor() protoreflect.EnumDescriptor {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_enumTypes[0].Descriptor()
+	return file_plugin_proto_enumTypes[0].Descriptor()
 }
 
 func (MixinResponse_Action) Type() protoreflect.EnumType {
-	return &file_Birdactyl_Go_SDK_main_proto_plugin_proto_enumTypes[0]
+	return &file_plugin_proto_enumTypes[0]
 }
 
 func (x MixinResponse_Action) Number() protoreflect.EnumNumber {
@@ -67,7 +67,7 @@ func (x MixinResponse_Action) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use MixinResponse_Action.Descriptor instead.
 func (MixinResponse_Action) EnumDescriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{15, 0}
+	return file_plugin_proto_rawDescGZIP(), []int{15, 0}
 }
 
 type AddonInstallAction_ActionType int32
@@ -115,11 +115,11 @@ func (x AddonInstallAction_ActionType) String() string {
 }
 
 func (AddonInstallAction_ActionType) Descriptor() protoreflect.EnumDescriptor {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_enumTypes[1].Descriptor()
+	return file_plugin_proto_enumTypes[1].Descriptor()
 }
 
 func (AddonInstallAction_ActionType) Type() protoreflect.EnumType {
-	return &file_Birdactyl_Go_SDK_main_proto_plugin_proto_enumTypes[1]
+	return &file_plugin_proto_enumTypes[1]
 }
 
 func (x AddonInstallAction_ActionType) Number() protoreflect.EnumNumber {
@@ -128,7 +128,7 @@ func (x AddonInstallAction_ActionType) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use AddonInstallAction_ActionType.Descriptor instead.
 func (AddonInstallAction_ActionType) EnumDescriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{105, 0}
+	return file_plugin_proto_rawDescGZIP(), []int{106, 0}
 }
 
 type PluginMessage struct {
@@ -149,7 +149,7 @@ type PluginMessage struct {
 
 func (x *PluginMessage) Reset() {
 	*x = PluginMessage{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[0]
+	mi := &file_plugin_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -161,7 +161,7 @@ func (x *PluginMessage) String() string {
 func (*PluginMessage) ProtoMessage() {}
 
 func (x *PluginMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[0]
+	mi := &file_plugin_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -174,7 +174,7 @@ func (x *PluginMessage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PluginMessage.ProtoReflect.Descriptor instead.
 func (*PluginMessage) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{0}
+	return file_plugin_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *PluginMessage) GetPayload() isPluginMessage_Payload {
@@ -304,7 +304,7 @@ type PanelMessage struct {
 
 func (x *PanelMessage) Reset() {
 	*x = PanelMessage{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[1]
+	mi := &file_plugin_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -316,7 +316,7 @@ func (x *PanelMessage) String() string {
 func (*PanelMessage) ProtoMessage() {}
 
 func (x *PanelMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[1]
+	mi := &file_plugin_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -329,7 +329,7 @@ func (x *PanelMessage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PanelMessage.ProtoReflect.Descriptor instead.
 func (*PanelMessage) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{1}
+	return file_plugin_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *PanelMessage) GetPayload() isPanelMessage_Payload {
@@ -464,7 +464,7 @@ type Empty struct {
 
 func (x *Empty) Reset() {
 	*x = Empty{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[2]
+	mi := &file_plugin_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -476,7 +476,7 @@ func (x *Empty) String() string {
 func (*Empty) ProtoMessage() {}
 
 func (x *Empty) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[2]
+	mi := &file_plugin_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -489,7 +489,7 @@ func (x *Empty) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Empty.ProtoReflect.Descriptor instead.
 func (*Empty) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{2}
+	return file_plugin_proto_rawDescGZIP(), []int{2}
 }
 
 type IDRequest struct {
@@ -501,7 +501,7 @@ type IDRequest struct {
 
 func (x *IDRequest) Reset() {
 	*x = IDRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[3]
+	mi := &file_plugin_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -513,7 +513,7 @@ func (x *IDRequest) String() string {
 func (*IDRequest) ProtoMessage() {}
 
 func (x *IDRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[3]
+	mi := &file_plugin_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -526,7 +526,7 @@ func (x *IDRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IDRequest.ProtoReflect.Descriptor instead.
 func (*IDRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{3}
+	return file_plugin_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *IDRequest) GetId() string {
@@ -545,7 +545,7 @@ type EmailRequest struct {
 
 func (x *EmailRequest) Reset() {
 	*x = EmailRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[4]
+	mi := &file_plugin_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -557,7 +557,7 @@ func (x *EmailRequest) String() string {
 func (*EmailRequest) ProtoMessage() {}
 
 func (x *EmailRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[4]
+	mi := &file_plugin_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -570,7 +570,7 @@ func (x *EmailRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EmailRequest.ProtoReflect.Descriptor instead.
 func (*EmailRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{4}
+	return file_plugin_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *EmailRequest) GetEmail() string {
@@ -589,7 +589,7 @@ type UsernameRequest struct {
 
 func (x *UsernameRequest) Reset() {
 	*x = UsernameRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[5]
+	mi := &file_plugin_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -601,7 +601,7 @@ func (x *UsernameRequest) String() string {
 func (*UsernameRequest) ProtoMessage() {}
 
 func (x *UsernameRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[5]
+	mi := &file_plugin_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -614,7 +614,7 @@ func (x *UsernameRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UsernameRequest.ProtoReflect.Descriptor instead.
 func (*UsernameRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{5}
+	return file_plugin_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *UsernameRequest) GetUsername() string {
@@ -633,7 +633,7 @@ type BoolRequest struct {
 
 func (x *BoolRequest) Reset() {
 	*x = BoolRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[6]
+	mi := &file_plugin_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -645,7 +645,7 @@ func (x *BoolRequest) String() string {
 func (*BoolRequest) ProtoMessage() {}
 
 func (x *BoolRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[6]
+	mi := &file_plugin_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -658,7 +658,7 @@ func (x *BoolRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BoolRequest.ProtoReflect.Descriptor instead.
 func (*BoolRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{6}
+	return file_plugin_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *BoolRequest) GetValue() bool {
@@ -685,7 +685,7 @@ type PluginInfo struct {
 
 func (x *PluginInfo) Reset() {
 	*x = PluginInfo{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[7]
+	mi := &file_plugin_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -697,7 +697,7 @@ func (x *PluginInfo) String() string {
 func (*PluginInfo) ProtoMessage() {}
 
 func (x *PluginInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[7]
+	mi := &file_plugin_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -710,7 +710,7 @@ func (x *PluginInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PluginInfo.ProtoReflect.Descriptor instead.
 func (*PluginInfo) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{7}
+	return file_plugin_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *PluginInfo) GetId() string {
@@ -789,7 +789,7 @@ type PluginUIInfo struct {
 
 func (x *PluginUIInfo) Reset() {
 	*x = PluginUIInfo{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[8]
+	mi := &file_plugin_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -801,7 +801,7 @@ func (x *PluginUIInfo) String() string {
 func (*PluginUIInfo) ProtoMessage() {}
 
 func (x *PluginUIInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[8]
+	mi := &file_plugin_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -814,7 +814,7 @@ func (x *PluginUIInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PluginUIInfo.ProtoReflect.Descriptor instead.
 func (*PluginUIInfo) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{8}
+	return file_plugin_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *PluginUIInfo) GetHasBundle() bool {
@@ -865,7 +865,7 @@ type PluginUIPage struct {
 
 func (x *PluginUIPage) Reset() {
 	*x = PluginUIPage{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[9]
+	mi := &file_plugin_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -877,7 +877,7 @@ func (x *PluginUIPage) String() string {
 func (*PluginUIPage) ProtoMessage() {}
 
 func (x *PluginUIPage) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[9]
+	mi := &file_plugin_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -890,7 +890,7 @@ func (x *PluginUIPage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PluginUIPage.ProtoReflect.Descriptor instead.
 func (*PluginUIPage) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{9}
+	return file_plugin_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *PluginUIPage) GetPath() string {
@@ -942,7 +942,7 @@ type PluginUITab struct {
 
 func (x *PluginUITab) Reset() {
 	*x = PluginUITab{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[10]
+	mi := &file_plugin_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -954,7 +954,7 @@ func (x *PluginUITab) String() string {
 func (*PluginUITab) ProtoMessage() {}
 
 func (x *PluginUITab) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[10]
+	mi := &file_plugin_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -967,7 +967,7 @@ func (x *PluginUITab) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PluginUITab.ProtoReflect.Descriptor instead.
 func (*PluginUITab) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{10}
+	return file_plugin_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *PluginUITab) GetId() string {
@@ -1028,7 +1028,7 @@ type PluginUISidebarItem struct {
 
 func (x *PluginUISidebarItem) Reset() {
 	*x = PluginUISidebarItem{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[11]
+	mi := &file_plugin_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1040,7 +1040,7 @@ func (x *PluginUISidebarItem) String() string {
 func (*PluginUISidebarItem) ProtoMessage() {}
 
 func (x *PluginUISidebarItem) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[11]
+	mi := &file_plugin_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1053,7 +1053,7 @@ func (x *PluginUISidebarItem) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PluginUISidebarItem.ProtoReflect.Descriptor instead.
 func (*PluginUISidebarItem) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{11}
+	return file_plugin_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *PluginUISidebarItem) GetId() string {
@@ -1122,7 +1122,7 @@ type PluginUISidebarChild struct {
 
 func (x *PluginUISidebarChild) Reset() {
 	*x = PluginUISidebarChild{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[12]
+	mi := &file_plugin_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1134,7 +1134,7 @@ func (x *PluginUISidebarChild) String() string {
 func (*PluginUISidebarChild) ProtoMessage() {}
 
 func (x *PluginUISidebarChild) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[12]
+	mi := &file_plugin_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1147,7 +1147,7 @@ func (x *PluginUISidebarChild) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PluginUISidebarChild.ProtoReflect.Descriptor instead.
 func (*PluginUISidebarChild) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{12}
+	return file_plugin_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *PluginUISidebarChild) GetLabel() string {
@@ -1174,7 +1174,7 @@ type MixinInfo struct {
 
 func (x *MixinInfo) Reset() {
 	*x = MixinInfo{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[13]
+	mi := &file_plugin_proto_msgTypes[13]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1186,7 +1186,7 @@ func (x *MixinInfo) String() string {
 func (*MixinInfo) ProtoMessage() {}
 
 func (x *MixinInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[13]
+	mi := &file_plugin_proto_msgTypes[13]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1199,7 +1199,7 @@ func (x *MixinInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MixinInfo.ProtoReflect.Descriptor instead.
 func (*MixinInfo) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{13}
+	return file_plugin_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *MixinInfo) GetTarget() string {
@@ -1228,7 +1228,7 @@ type MixinRequest struct {
 
 func (x *MixinRequest) Reset() {
 	*x = MixinRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[14]
+	mi := &file_plugin_proto_msgTypes[14]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1240,7 +1240,7 @@ func (x *MixinRequest) String() string {
 func (*MixinRequest) ProtoMessage() {}
 
 func (x *MixinRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[14]
+	mi := &file_plugin_proto_msgTypes[14]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1253,7 +1253,7 @@ func (x *MixinRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MixinRequest.ProtoReflect.Descriptor instead.
 func (*MixinRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{14}
+	return file_plugin_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *MixinRequest) GetTarget() string {
@@ -1297,7 +1297,7 @@ type MixinResponse struct {
 
 func (x *MixinResponse) Reset() {
 	*x = MixinResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[15]
+	mi := &file_plugin_proto_msgTypes[15]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1309,7 +1309,7 @@ func (x *MixinResponse) String() string {
 func (*MixinResponse) ProtoMessage() {}
 
 func (x *MixinResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[15]
+	mi := &file_plugin_proto_msgTypes[15]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1322,7 +1322,7 @@ func (x *MixinResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MixinResponse.ProtoReflect.Descriptor instead.
 func (*MixinResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{15}
+	return file_plugin_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *MixinResponse) GetAction() MixinResponse_Action {
@@ -1371,7 +1371,7 @@ type Notification struct {
 
 func (x *Notification) Reset() {
 	*x = Notification{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[16]
+	mi := &file_plugin_proto_msgTypes[16]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1383,7 +1383,7 @@ func (x *Notification) String() string {
 func (*Notification) ProtoMessage() {}
 
 func (x *Notification) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[16]
+	mi := &file_plugin_proto_msgTypes[16]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1396,7 +1396,7 @@ func (x *Notification) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Notification.ProtoReflect.Descriptor instead.
 func (*Notification) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{16}
+	return file_plugin_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *Notification) GetTitle() string {
@@ -1424,13 +1424,14 @@ type RouteInfo struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Method        string                 `protobuf:"bytes,1,opt,name=method,proto3" json:"method,omitempty"`
 	Path          string                 `protobuf:"bytes,2,opt,name=path,proto3" json:"path,omitempty"`
+	RateLimit     *RateLimitConfig       `protobuf:"bytes,3,opt,name=rate_limit,json=rateLimit,proto3" json:"rate_limit,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *RouteInfo) Reset() {
 	*x = RouteInfo{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[17]
+	mi := &file_plugin_proto_msgTypes[17]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1442,7 +1443,7 @@ func (x *RouteInfo) String() string {
 func (*RouteInfo) ProtoMessage() {}
 
 func (x *RouteInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[17]
+	mi := &file_plugin_proto_msgTypes[17]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1455,7 +1456,7 @@ func (x *RouteInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RouteInfo.ProtoReflect.Descriptor instead.
 func (*RouteInfo) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{17}
+	return file_plugin_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *RouteInfo) GetMethod() string {
@@ -1472,6 +1473,73 @@ func (x *RouteInfo) GetPath() string {
 	return ""
 }
 
+func (x *RouteInfo) GetRateLimit() *RateLimitConfig {
+	if x != nil {
+		return x.RateLimit
+	}
+	return nil
+}
+
+type RateLimitConfig struct {
+	state             protoimpl.MessageState `protogen:"open.v1"`
+	Preset            string                 `protobuf:"bytes,1,opt,name=preset,proto3" json:"preset,omitempty"`
+	RequestsPerMinute int32                  `protobuf:"varint,2,opt,name=requests_per_minute,json=requestsPerMinute,proto3" json:"requests_per_minute,omitempty"`
+	BurstLimit        int32                  `protobuf:"varint,3,opt,name=burst_limit,json=burstLimit,proto3" json:"burst_limit,omitempty"`
+	unknownFields     protoimpl.UnknownFields
+	sizeCache         protoimpl.SizeCache
+}
+
+func (x *RateLimitConfig) Reset() {
+	*x = RateLimitConfig{}
+	mi := &file_plugin_proto_msgTypes[18]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *RateLimitConfig) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*RateLimitConfig) ProtoMessage() {}
+
+func (x *RateLimitConfig) ProtoReflect() protoreflect.Message {
+	mi := &file_plugin_proto_msgTypes[18]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use RateLimitConfig.ProtoReflect.Descriptor instead.
+func (*RateLimitConfig) Descriptor() ([]byte, []int) {
+	return file_plugin_proto_rawDescGZIP(), []int{18}
+}
+
+func (x *RateLimitConfig) GetPreset() string {
+	if x != nil {
+		return x.Preset
+	}
+	return ""
+}
+
+func (x *RateLimitConfig) GetRequestsPerMinute() int32 {
+	if x != nil {
+		return x.RequestsPerMinute
+	}
+	return 0
+}
+
+func (x *RateLimitConfig) GetBurstLimit() int32 {
+	if x != nil {
+		return x.BurstLimit
+	}
+	return 0
+}
+
 type ScheduleInfo struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Id            string                 `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
@@ -1482,7 +1550,7 @@ type ScheduleInfo struct {
 
 func (x *ScheduleInfo) Reset() {
 	*x = ScheduleInfo{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[18]
+	mi := &file_plugin_proto_msgTypes[19]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1494,7 +1562,7 @@ func (x *ScheduleInfo) String() string {
 func (*ScheduleInfo) ProtoMessage() {}
 
 func (x *ScheduleInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[18]
+	mi := &file_plugin_proto_msgTypes[19]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1507,7 +1575,7 @@ func (x *ScheduleInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ScheduleInfo.ProtoReflect.Descriptor instead.
 func (*ScheduleInfo) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{18}
+	return file_plugin_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *ScheduleInfo) GetId() string {
@@ -1536,7 +1604,7 @@ type Event struct {
 
 func (x *Event) Reset() {
 	*x = Event{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[19]
+	mi := &file_plugin_proto_msgTypes[20]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1548,7 +1616,7 @@ func (x *Event) String() string {
 func (*Event) ProtoMessage() {}
 
 func (x *Event) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[19]
+	mi := &file_plugin_proto_msgTypes[20]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1561,7 +1629,7 @@ func (x *Event) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Event.ProtoReflect.Descriptor instead.
 func (*Event) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{19}
+	return file_plugin_proto_rawDescGZIP(), []int{20}
 }
 
 func (x *Event) GetType() string {
@@ -1602,7 +1670,7 @@ type EventResponse struct {
 
 func (x *EventResponse) Reset() {
 	*x = EventResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[20]
+	mi := &file_plugin_proto_msgTypes[21]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1614,7 +1682,7 @@ func (x *EventResponse) String() string {
 func (*EventResponse) ProtoMessage() {}
 
 func (x *EventResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[20]
+	mi := &file_plugin_proto_msgTypes[21]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1627,7 +1695,7 @@ func (x *EventResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EventResponse.ProtoReflect.Descriptor instead.
 func (*EventResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{20}
+	return file_plugin_proto_rawDescGZIP(), []int{21}
 }
 
 func (x *EventResponse) GetAllow() bool {
@@ -1658,7 +1726,7 @@ type HTTPRequest struct {
 
 func (x *HTTPRequest) Reset() {
 	*x = HTTPRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[21]
+	mi := &file_plugin_proto_msgTypes[22]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1670,7 +1738,7 @@ func (x *HTTPRequest) String() string {
 func (*HTTPRequest) ProtoMessage() {}
 
 func (x *HTTPRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[21]
+	mi := &file_plugin_proto_msgTypes[22]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1683,7 +1751,7 @@ func (x *HTTPRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HTTPRequest.ProtoReflect.Descriptor instead.
 func (*HTTPRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{21}
+	return file_plugin_proto_rawDescGZIP(), []int{22}
 }
 
 func (x *HTTPRequest) GetMethod() string {
@@ -1739,7 +1807,7 @@ type HTTPResponse struct {
 
 func (x *HTTPResponse) Reset() {
 	*x = HTTPResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[22]
+	mi := &file_plugin_proto_msgTypes[23]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1751,7 +1819,7 @@ func (x *HTTPResponse) String() string {
 func (*HTTPResponse) ProtoMessage() {}
 
 func (x *HTTPResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[22]
+	mi := &file_plugin_proto_msgTypes[23]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1764,7 +1832,7 @@ func (x *HTTPResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HTTPResponse.ProtoReflect.Descriptor instead.
 func (*HTTPResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{22}
+	return file_plugin_proto_rawDescGZIP(), []int{23}
 }
 
 func (x *HTTPResponse) GetStatus() int32 {
@@ -1797,7 +1865,7 @@ type ScheduleRequest struct {
 
 func (x *ScheduleRequest) Reset() {
 	*x = ScheduleRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[23]
+	mi := &file_plugin_proto_msgTypes[24]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1809,7 +1877,7 @@ func (x *ScheduleRequest) String() string {
 func (*ScheduleRequest) ProtoMessage() {}
 
 func (x *ScheduleRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[23]
+	mi := &file_plugin_proto_msgTypes[24]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1822,7 +1890,7 @@ func (x *ScheduleRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ScheduleRequest.ProtoReflect.Descriptor instead.
 func (*ScheduleRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{23}
+	return file_plugin_proto_rawDescGZIP(), []int{24}
 }
 
 func (x *ScheduleRequest) GetScheduleId() string {
@@ -1852,7 +1920,7 @@ type Server struct {
 
 func (x *Server) Reset() {
 	*x = Server{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[24]
+	mi := &file_plugin_proto_msgTypes[25]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1864,7 +1932,7 @@ func (x *Server) String() string {
 func (*Server) ProtoMessage() {}
 
 func (x *Server) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[24]
+	mi := &file_plugin_proto_msgTypes[25]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1877,7 +1945,7 @@ func (x *Server) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Server.ProtoReflect.Descriptor instead.
 func (*Server) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{24}
+	return file_plugin_proto_rawDescGZIP(), []int{25}
 }
 
 func (x *Server) GetId() string {
@@ -1969,7 +2037,7 @@ type ListServersRequest struct {
 
 func (x *ListServersRequest) Reset() {
 	*x = ListServersRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[25]
+	mi := &file_plugin_proto_msgTypes[26]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1981,7 +2049,7 @@ func (x *ListServersRequest) String() string {
 func (*ListServersRequest) ProtoMessage() {}
 
 func (x *ListServersRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[25]
+	mi := &file_plugin_proto_msgTypes[26]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1994,7 +2062,7 @@ func (x *ListServersRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListServersRequest.ProtoReflect.Descriptor instead.
 func (*ListServersRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{25}
+	return file_plugin_proto_rawDescGZIP(), []int{26}
 }
 
 func (x *ListServersRequest) GetUserId() string {
@@ -2035,7 +2103,7 @@ type ListServersResponse struct {
 
 func (x *ListServersResponse) Reset() {
 	*x = ListServersResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[26]
+	mi := &file_plugin_proto_msgTypes[27]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2047,7 +2115,7 @@ func (x *ListServersResponse) String() string {
 func (*ListServersResponse) ProtoMessage() {}
 
 func (x *ListServersResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[26]
+	mi := &file_plugin_proto_msgTypes[27]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2060,7 +2128,7 @@ func (x *ListServersResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListServersResponse.ProtoReflect.Descriptor instead.
 func (*ListServersResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{26}
+	return file_plugin_proto_rawDescGZIP(), []int{27}
 }
 
 func (x *ListServersResponse) GetServers() []*Server {
@@ -2092,7 +2160,7 @@ type CreateServerRequest struct {
 
 func (x *CreateServerRequest) Reset() {
 	*x = CreateServerRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[27]
+	mi := &file_plugin_proto_msgTypes[28]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2104,7 +2172,7 @@ func (x *CreateServerRequest) String() string {
 func (*CreateServerRequest) ProtoMessage() {}
 
 func (x *CreateServerRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[27]
+	mi := &file_plugin_proto_msgTypes[28]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2117,7 +2185,7 @@ func (x *CreateServerRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateServerRequest.ProtoReflect.Descriptor instead.
 func (*CreateServerRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{27}
+	return file_plugin_proto_rawDescGZIP(), []int{28}
 }
 
 func (x *CreateServerRequest) GetName() string {
@@ -2183,7 +2251,7 @@ type UpdateServerRequest struct {
 
 func (x *UpdateServerRequest) Reset() {
 	*x = UpdateServerRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[28]
+	mi := &file_plugin_proto_msgTypes[29]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2195,7 +2263,7 @@ func (x *UpdateServerRequest) String() string {
 func (*UpdateServerRequest) ProtoMessage() {}
 
 func (x *UpdateServerRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[28]
+	mi := &file_plugin_proto_msgTypes[29]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2208,7 +2276,7 @@ func (x *UpdateServerRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateServerRequest.ProtoReflect.Descriptor instead.
 func (*UpdateServerRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{28}
+	return file_plugin_proto_rawDescGZIP(), []int{29}
 }
 
 func (x *UpdateServerRequest) GetId() string {
@@ -2263,7 +2331,7 @@ type TransferServerRequest struct {
 
 func (x *TransferServerRequest) Reset() {
 	*x = TransferServerRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[29]
+	mi := &file_plugin_proto_msgTypes[30]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2275,7 +2343,7 @@ func (x *TransferServerRequest) String() string {
 func (*TransferServerRequest) ProtoMessage() {}
 
 func (x *TransferServerRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[29]
+	mi := &file_plugin_proto_msgTypes[30]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2288,7 +2356,7 @@ func (x *TransferServerRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TransferServerRequest.ProtoReflect.Descriptor instead.
 func (*TransferServerRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{29}
+	return file_plugin_proto_rawDescGZIP(), []int{30}
 }
 
 func (x *TransferServerRequest) GetServerId() string {
@@ -2315,7 +2383,7 @@ type ConsoleLogRequest struct {
 
 func (x *ConsoleLogRequest) Reset() {
 	*x = ConsoleLogRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[30]
+	mi := &file_plugin_proto_msgTypes[31]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2327,7 +2395,7 @@ func (x *ConsoleLogRequest) String() string {
 func (*ConsoleLogRequest) ProtoMessage() {}
 
 func (x *ConsoleLogRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[30]
+	mi := &file_plugin_proto_msgTypes[31]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2340,7 +2408,7 @@ func (x *ConsoleLogRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ConsoleLogRequest.ProtoReflect.Descriptor instead.
 func (*ConsoleLogRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{30}
+	return file_plugin_proto_rawDescGZIP(), []int{31}
 }
 
 func (x *ConsoleLogRequest) GetServerId() string {
@@ -2366,7 +2434,7 @@ type ConsoleLogResponse struct {
 
 func (x *ConsoleLogResponse) Reset() {
 	*x = ConsoleLogResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[31]
+	mi := &file_plugin_proto_msgTypes[32]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2378,7 +2446,7 @@ func (x *ConsoleLogResponse) String() string {
 func (*ConsoleLogResponse) ProtoMessage() {}
 
 func (x *ConsoleLogResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[31]
+	mi := &file_plugin_proto_msgTypes[32]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2391,7 +2459,7 @@ func (x *ConsoleLogResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ConsoleLogResponse.ProtoReflect.Descriptor instead.
 func (*ConsoleLogResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{31}
+	return file_plugin_proto_rawDescGZIP(), []int{32}
 }
 
 func (x *ConsoleLogResponse) GetLines() []string {
@@ -2411,7 +2479,7 @@ type SendCommandRequest struct {
 
 func (x *SendCommandRequest) Reset() {
 	*x = SendCommandRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[32]
+	mi := &file_plugin_proto_msgTypes[33]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2423,7 +2491,7 @@ func (x *SendCommandRequest) String() string {
 func (*SendCommandRequest) ProtoMessage() {}
 
 func (x *SendCommandRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[32]
+	mi := &file_plugin_proto_msgTypes[33]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2436,7 +2504,7 @@ func (x *SendCommandRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SendCommandRequest.ProtoReflect.Descriptor instead.
 func (*SendCommandRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{32}
+	return file_plugin_proto_rawDescGZIP(), []int{33}
 }
 
 func (x *SendCommandRequest) GetServerId() string {
@@ -2468,7 +2536,7 @@ type ServerStats struct {
 
 func (x *ServerStats) Reset() {
 	*x = ServerStats{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[33]
+	mi := &file_plugin_proto_msgTypes[34]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2480,7 +2548,7 @@ func (x *ServerStats) String() string {
 func (*ServerStats) ProtoMessage() {}
 
 func (x *ServerStats) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[33]
+	mi := &file_plugin_proto_msgTypes[34]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2493,7 +2561,7 @@ func (x *ServerStats) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ServerStats.ProtoReflect.Descriptor instead.
 func (*ServerStats) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{33}
+	return file_plugin_proto_rawDescGZIP(), []int{34}
 }
 
 func (x *ServerStats) GetMemoryBytes() int64 {
@@ -2555,7 +2623,7 @@ type AllocationRequest struct {
 
 func (x *AllocationRequest) Reset() {
 	*x = AllocationRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[34]
+	mi := &file_plugin_proto_msgTypes[35]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2567,7 +2635,7 @@ func (x *AllocationRequest) String() string {
 func (*AllocationRequest) ProtoMessage() {}
 
 func (x *AllocationRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[34]
+	mi := &file_plugin_proto_msgTypes[35]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2580,7 +2648,7 @@ func (x *AllocationRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AllocationRequest.ProtoReflect.Descriptor instead.
 func (*AllocationRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{34}
+	return file_plugin_proto_rawDescGZIP(), []int{35}
 }
 
 func (x *AllocationRequest) GetServerId() string {
@@ -2608,7 +2676,7 @@ type CompressRequest struct {
 
 func (x *CompressRequest) Reset() {
 	*x = CompressRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[35]
+	mi := &file_plugin_proto_msgTypes[36]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2620,7 +2688,7 @@ func (x *CompressRequest) String() string {
 func (*CompressRequest) ProtoMessage() {}
 
 func (x *CompressRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[35]
+	mi := &file_plugin_proto_msgTypes[36]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2633,7 +2701,7 @@ func (x *CompressRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CompressRequest.ProtoReflect.Descriptor instead.
 func (*CompressRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{35}
+	return file_plugin_proto_rawDescGZIP(), []int{36}
 }
 
 func (x *CompressRequest) GetServerId() string {
@@ -2667,7 +2735,7 @@ type UpdateVariablesRequest struct {
 
 func (x *UpdateVariablesRequest) Reset() {
 	*x = UpdateVariablesRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[36]
+	mi := &file_plugin_proto_msgTypes[37]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2679,7 +2747,7 @@ func (x *UpdateVariablesRequest) String() string {
 func (*UpdateVariablesRequest) ProtoMessage() {}
 
 func (x *UpdateVariablesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[36]
+	mi := &file_plugin_proto_msgTypes[37]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2692,7 +2760,7 @@ func (x *UpdateVariablesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateVariablesRequest.ProtoReflect.Descriptor instead.
 func (*UpdateVariablesRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{36}
+	return file_plugin_proto_rawDescGZIP(), []int{37}
 }
 
 func (x *UpdateVariablesRequest) GetServerId() string {
@@ -2720,7 +2788,7 @@ type StreamConsoleRequest struct {
 
 func (x *StreamConsoleRequest) Reset() {
 	*x = StreamConsoleRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[37]
+	mi := &file_plugin_proto_msgTypes[38]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2732,7 +2800,7 @@ func (x *StreamConsoleRequest) String() string {
 func (*StreamConsoleRequest) ProtoMessage() {}
 
 func (x *StreamConsoleRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[37]
+	mi := &file_plugin_proto_msgTypes[38]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2745,7 +2813,7 @@ func (x *StreamConsoleRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use StreamConsoleRequest.ProtoReflect.Descriptor instead.
 func (*StreamConsoleRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{37}
+	return file_plugin_proto_rawDescGZIP(), []int{38}
 }
 
 func (x *StreamConsoleRequest) GetServerId() string {
@@ -2779,7 +2847,7 @@ type ConsoleLine struct {
 
 func (x *ConsoleLine) Reset() {
 	*x = ConsoleLine{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[38]
+	mi := &file_plugin_proto_msgTypes[39]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2791,7 +2859,7 @@ func (x *ConsoleLine) String() string {
 func (*ConsoleLine) ProtoMessage() {}
 
 func (x *ConsoleLine) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[38]
+	mi := &file_plugin_proto_msgTypes[39]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2804,7 +2872,7 @@ func (x *ConsoleLine) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ConsoleLine.ProtoReflect.Descriptor instead.
 func (*ConsoleLine) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{38}
+	return file_plugin_proto_rawDescGZIP(), []int{39}
 }
 
 func (x *ConsoleLine) GetLine() string {
@@ -2831,7 +2899,7 @@ type FullLogResponse struct {
 
 func (x *FullLogResponse) Reset() {
 	*x = FullLogResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[39]
+	mi := &file_plugin_proto_msgTypes[40]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2843,7 +2911,7 @@ func (x *FullLogResponse) String() string {
 func (*FullLogResponse) ProtoMessage() {}
 
 func (x *FullLogResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[39]
+	mi := &file_plugin_proto_msgTypes[40]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2856,7 +2924,7 @@ func (x *FullLogResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FullLogResponse.ProtoReflect.Descriptor instead.
 func (*FullLogResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{39}
+	return file_plugin_proto_rawDescGZIP(), []int{40}
 }
 
 func (x *FullLogResponse) GetContent() []byte {
@@ -2886,7 +2954,7 @@ type SearchLogsRequest struct {
 
 func (x *SearchLogsRequest) Reset() {
 	*x = SearchLogsRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[40]
+	mi := &file_plugin_proto_msgTypes[41]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2898,7 +2966,7 @@ func (x *SearchLogsRequest) String() string {
 func (*SearchLogsRequest) ProtoMessage() {}
 
 func (x *SearchLogsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[40]
+	mi := &file_plugin_proto_msgTypes[41]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2911,7 +2979,7 @@ func (x *SearchLogsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SearchLogsRequest.ProtoReflect.Descriptor instead.
 func (*SearchLogsRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{40}
+	return file_plugin_proto_rawDescGZIP(), []int{41}
 }
 
 func (x *SearchLogsRequest) GetServerId() string {
@@ -2958,7 +3026,7 @@ type SearchLogsResponse struct {
 
 func (x *SearchLogsResponse) Reset() {
 	*x = SearchLogsResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[41]
+	mi := &file_plugin_proto_msgTypes[42]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2970,7 +3038,7 @@ func (x *SearchLogsResponse) String() string {
 func (*SearchLogsResponse) ProtoMessage() {}
 
 func (x *SearchLogsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[41]
+	mi := &file_plugin_proto_msgTypes[42]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2983,7 +3051,7 @@ func (x *SearchLogsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SearchLogsResponse.ProtoReflect.Descriptor instead.
 func (*SearchLogsResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{41}
+	return file_plugin_proto_rawDescGZIP(), []int{42}
 }
 
 func (x *SearchLogsResponse) GetMatches() []*LogMatch {
@@ -3004,7 +3072,7 @@ type LogMatch struct {
 
 func (x *LogMatch) Reset() {
 	*x = LogMatch{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[42]
+	mi := &file_plugin_proto_msgTypes[43]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3016,7 +3084,7 @@ func (x *LogMatch) String() string {
 func (*LogMatch) ProtoMessage() {}
 
 func (x *LogMatch) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[42]
+	mi := &file_plugin_proto_msgTypes[43]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3029,7 +3097,7 @@ func (x *LogMatch) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LogMatch.ProtoReflect.Descriptor instead.
 func (*LogMatch) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{42}
+	return file_plugin_proto_rawDescGZIP(), []int{43}
 }
 
 func (x *LogMatch) GetLine() string {
@@ -3062,7 +3130,7 @@ type LogFilesResponse struct {
 
 func (x *LogFilesResponse) Reset() {
 	*x = LogFilesResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[43]
+	mi := &file_plugin_proto_msgTypes[44]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3074,7 +3142,7 @@ func (x *LogFilesResponse) String() string {
 func (*LogFilesResponse) ProtoMessage() {}
 
 func (x *LogFilesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[43]
+	mi := &file_plugin_proto_msgTypes[44]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3087,7 +3155,7 @@ func (x *LogFilesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LogFilesResponse.ProtoReflect.Descriptor instead.
 func (*LogFilesResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{43}
+	return file_plugin_proto_rawDescGZIP(), []int{44}
 }
 
 func (x *LogFilesResponse) GetFiles() []*LogFileInfo {
@@ -3108,7 +3176,7 @@ type LogFileInfo struct {
 
 func (x *LogFileInfo) Reset() {
 	*x = LogFileInfo{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[44]
+	mi := &file_plugin_proto_msgTypes[45]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3120,7 +3188,7 @@ func (x *LogFileInfo) String() string {
 func (*LogFileInfo) ProtoMessage() {}
 
 func (x *LogFileInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[44]
+	mi := &file_plugin_proto_msgTypes[45]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3133,7 +3201,7 @@ func (x *LogFileInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LogFileInfo.ProtoReflect.Descriptor instead.
 func (*LogFileInfo) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{44}
+	return file_plugin_proto_rawDescGZIP(), []int{45}
 }
 
 func (x *LogFileInfo) GetName() string {
@@ -3167,7 +3235,7 @@ type ReadLogFileRequest struct {
 
 func (x *ReadLogFileRequest) Reset() {
 	*x = ReadLogFileRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[45]
+	mi := &file_plugin_proto_msgTypes[46]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3179,7 +3247,7 @@ func (x *ReadLogFileRequest) String() string {
 func (*ReadLogFileRequest) ProtoMessage() {}
 
 func (x *ReadLogFileRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[45]
+	mi := &file_plugin_proto_msgTypes[46]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3192,7 +3260,7 @@ func (x *ReadLogFileRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ReadLogFileRequest.ProtoReflect.Descriptor instead.
 func (*ReadLogFileRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{45}
+	return file_plugin_proto_rawDescGZIP(), []int{46}
 }
 
 func (x *ReadLogFileRequest) GetServerId() string {
@@ -3229,7 +3297,7 @@ type User struct {
 
 func (x *User) Reset() {
 	*x = User{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[46]
+	mi := &file_plugin_proto_msgTypes[47]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3241,7 +3309,7 @@ func (x *User) String() string {
 func (*User) ProtoMessage() {}
 
 func (x *User) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[46]
+	mi := &file_plugin_proto_msgTypes[47]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3254,7 +3322,7 @@ func (x *User) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use User.ProtoReflect.Descriptor instead.
 func (*User) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{46}
+	return file_plugin_proto_rawDescGZIP(), []int{47}
 }
 
 func (x *User) GetId() string {
@@ -3346,7 +3414,7 @@ type ListUsersRequest struct {
 
 func (x *ListUsersRequest) Reset() {
 	*x = ListUsersRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[47]
+	mi := &file_plugin_proto_msgTypes[48]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3358,7 +3426,7 @@ func (x *ListUsersRequest) String() string {
 func (*ListUsersRequest) ProtoMessage() {}
 
 func (x *ListUsersRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[47]
+	mi := &file_plugin_proto_msgTypes[48]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3371,7 +3439,7 @@ func (x *ListUsersRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListUsersRequest.ProtoReflect.Descriptor instead.
 func (*ListUsersRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{47}
+	return file_plugin_proto_rawDescGZIP(), []int{48}
 }
 
 func (x *ListUsersRequest) GetLimit() int32 {
@@ -3412,7 +3480,7 @@ type ListUsersResponse struct {
 
 func (x *ListUsersResponse) Reset() {
 	*x = ListUsersResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[48]
+	mi := &file_plugin_proto_msgTypes[49]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3424,7 +3492,7 @@ func (x *ListUsersResponse) String() string {
 func (*ListUsersResponse) ProtoMessage() {}
 
 func (x *ListUsersResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[48]
+	mi := &file_plugin_proto_msgTypes[49]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3437,7 +3505,7 @@ func (x *ListUsersResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListUsersResponse.ProtoReflect.Descriptor instead.
 func (*ListUsersResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{48}
+	return file_plugin_proto_rawDescGZIP(), []int{49}
 }
 
 func (x *ListUsersResponse) GetUsers() []*User {
@@ -3465,7 +3533,7 @@ type CreateUserRequest struct {
 
 func (x *CreateUserRequest) Reset() {
 	*x = CreateUserRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[49]
+	mi := &file_plugin_proto_msgTypes[50]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3477,7 +3545,7 @@ func (x *CreateUserRequest) String() string {
 func (*CreateUserRequest) ProtoMessage() {}
 
 func (x *CreateUserRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[49]
+	mi := &file_plugin_proto_msgTypes[50]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3490,7 +3558,7 @@ func (x *CreateUserRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateUserRequest.ProtoReflect.Descriptor instead.
 func (*CreateUserRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{49}
+	return file_plugin_proto_rawDescGZIP(), []int{50}
 }
 
 func (x *CreateUserRequest) GetEmail() string {
@@ -3526,7 +3594,7 @@ type UpdateUserRequest struct {
 
 func (x *UpdateUserRequest) Reset() {
 	*x = UpdateUserRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[50]
+	mi := &file_plugin_proto_msgTypes[51]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3538,7 +3606,7 @@ func (x *UpdateUserRequest) String() string {
 func (*UpdateUserRequest) ProtoMessage() {}
 
 func (x *UpdateUserRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[50]
+	mi := &file_plugin_proto_msgTypes[51]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3551,7 +3619,7 @@ func (x *UpdateUserRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateUserRequest.ProtoReflect.Descriptor instead.
 func (*UpdateUserRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{50}
+	return file_plugin_proto_rawDescGZIP(), []int{51}
 }
 
 func (x *UpdateUserRequest) GetId() string {
@@ -3595,7 +3663,7 @@ type SetUserResourcesRequest struct {
 
 func (x *SetUserResourcesRequest) Reset() {
 	*x = SetUserResourcesRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[51]
+	mi := &file_plugin_proto_msgTypes[52]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3607,7 +3675,7 @@ func (x *SetUserResourcesRequest) String() string {
 func (*SetUserResourcesRequest) ProtoMessage() {}
 
 func (x *SetUserResourcesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[51]
+	mi := &file_plugin_proto_msgTypes[52]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3620,7 +3688,7 @@ func (x *SetUserResourcesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetUserResourcesRequest.ProtoReflect.Descriptor instead.
 func (*SetUserResourcesRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{51}
+	return file_plugin_proto_rawDescGZIP(), []int{52}
 }
 
 func (x *SetUserResourcesRequest) GetUserId() string {
@@ -3672,7 +3740,7 @@ type Subuser struct {
 
 func (x *Subuser) Reset() {
 	*x = Subuser{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[52]
+	mi := &file_plugin_proto_msgTypes[53]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3684,7 +3752,7 @@ func (x *Subuser) String() string {
 func (*Subuser) ProtoMessage() {}
 
 func (x *Subuser) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[52]
+	mi := &file_plugin_proto_msgTypes[53]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3697,7 +3765,7 @@ func (x *Subuser) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Subuser.ProtoReflect.Descriptor instead.
 func (*Subuser) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{52}
+	return file_plugin_proto_rawDescGZIP(), []int{53}
 }
 
 func (x *Subuser) GetId() string {
@@ -3744,7 +3812,7 @@ type ListSubusersResponse struct {
 
 func (x *ListSubusersResponse) Reset() {
 	*x = ListSubusersResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[53]
+	mi := &file_plugin_proto_msgTypes[54]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3756,7 +3824,7 @@ func (x *ListSubusersResponse) String() string {
 func (*ListSubusersResponse) ProtoMessage() {}
 
 func (x *ListSubusersResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[53]
+	mi := &file_plugin_proto_msgTypes[54]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3769,7 +3837,7 @@ func (x *ListSubusersResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListSubusersResponse.ProtoReflect.Descriptor instead.
 func (*ListSubusersResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{53}
+	return file_plugin_proto_rawDescGZIP(), []int{54}
 }
 
 func (x *ListSubusersResponse) GetSubusers() []*Subuser {
@@ -3790,7 +3858,7 @@ type AddSubuserRequest struct {
 
 func (x *AddSubuserRequest) Reset() {
 	*x = AddSubuserRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[54]
+	mi := &file_plugin_proto_msgTypes[55]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3802,7 +3870,7 @@ func (x *AddSubuserRequest) String() string {
 func (*AddSubuserRequest) ProtoMessage() {}
 
 func (x *AddSubuserRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[54]
+	mi := &file_plugin_proto_msgTypes[55]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3815,7 +3883,7 @@ func (x *AddSubuserRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AddSubuserRequest.ProtoReflect.Descriptor instead.
 func (*AddSubuserRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{54}
+	return file_plugin_proto_rawDescGZIP(), []int{55}
 }
 
 func (x *AddSubuserRequest) GetServerId() string {
@@ -3850,7 +3918,7 @@ type UpdateSubuserRequest struct {
 
 func (x *UpdateSubuserRequest) Reset() {
 	*x = UpdateSubuserRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[55]
+	mi := &file_plugin_proto_msgTypes[56]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3862,7 +3930,7 @@ func (x *UpdateSubuserRequest) String() string {
 func (*UpdateSubuserRequest) ProtoMessage() {}
 
 func (x *UpdateSubuserRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[55]
+	mi := &file_plugin_proto_msgTypes[56]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3875,7 +3943,7 @@ func (x *UpdateSubuserRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateSubuserRequest.ProtoReflect.Descriptor instead.
 func (*UpdateSubuserRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{55}
+	return file_plugin_proto_rawDescGZIP(), []int{56}
 }
 
 func (x *UpdateSubuserRequest) GetServerId() string {
@@ -3909,7 +3977,7 @@ type RemoveSubuserRequest struct {
 
 func (x *RemoveSubuserRequest) Reset() {
 	*x = RemoveSubuserRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[56]
+	mi := &file_plugin_proto_msgTypes[57]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3921,7 +3989,7 @@ func (x *RemoveSubuserRequest) String() string {
 func (*RemoveSubuserRequest) ProtoMessage() {}
 
 func (x *RemoveSubuserRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[56]
+	mi := &file_plugin_proto_msgTypes[57]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3934,7 +4002,7 @@ func (x *RemoveSubuserRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RemoveSubuserRequest.ProtoReflect.Descriptor instead.
 func (*RemoveSubuserRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{56}
+	return file_plugin_proto_rawDescGZIP(), []int{57}
 }
 
 func (x *RemoveSubuserRequest) GetServerId() string {
@@ -3966,7 +4034,7 @@ type Database struct {
 
 func (x *Database) Reset() {
 	*x = Database{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[57]
+	mi := &file_plugin_proto_msgTypes[58]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3978,7 +4046,7 @@ func (x *Database) String() string {
 func (*Database) ProtoMessage() {}
 
 func (x *Database) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[57]
+	mi := &file_plugin_proto_msgTypes[58]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3991,7 +4059,7 @@ func (x *Database) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Database.ProtoReflect.Descriptor instead.
 func (*Database) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{57}
+	return file_plugin_proto_rawDescGZIP(), []int{58}
 }
 
 func (x *Database) GetId() string {
@@ -4045,7 +4113,7 @@ type ListDatabasesResponse struct {
 
 func (x *ListDatabasesResponse) Reset() {
 	*x = ListDatabasesResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[58]
+	mi := &file_plugin_proto_msgTypes[59]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4057,7 +4125,7 @@ func (x *ListDatabasesResponse) String() string {
 func (*ListDatabasesResponse) ProtoMessage() {}
 
 func (x *ListDatabasesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[58]
+	mi := &file_plugin_proto_msgTypes[59]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4070,7 +4138,7 @@ func (x *ListDatabasesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListDatabasesResponse.ProtoReflect.Descriptor instead.
 func (*ListDatabasesResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{58}
+	return file_plugin_proto_rawDescGZIP(), []int{59}
 }
 
 func (x *ListDatabasesResponse) GetDatabases() []*Database {
@@ -4091,7 +4159,7 @@ type CreateDatabaseRequest struct {
 
 func (x *CreateDatabaseRequest) Reset() {
 	*x = CreateDatabaseRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[59]
+	mi := &file_plugin_proto_msgTypes[60]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4103,7 +4171,7 @@ func (x *CreateDatabaseRequest) String() string {
 func (*CreateDatabaseRequest) ProtoMessage() {}
 
 func (x *CreateDatabaseRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[59]
+	mi := &file_plugin_proto_msgTypes[60]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4116,7 +4184,7 @@ func (x *CreateDatabaseRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateDatabaseRequest.ProtoReflect.Descriptor instead.
 func (*CreateDatabaseRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{59}
+	return file_plugin_proto_rawDescGZIP(), []int{60}
 }
 
 func (x *CreateDatabaseRequest) GetServerId() string {
@@ -4156,7 +4224,7 @@ type DatabaseHost struct {
 
 func (x *DatabaseHost) Reset() {
 	*x = DatabaseHost{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[60]
+	mi := &file_plugin_proto_msgTypes[61]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4168,7 +4236,7 @@ func (x *DatabaseHost) String() string {
 func (*DatabaseHost) ProtoMessage() {}
 
 func (x *DatabaseHost) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[60]
+	mi := &file_plugin_proto_msgTypes[61]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4181,7 +4249,7 @@ func (x *DatabaseHost) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DatabaseHost.ProtoReflect.Descriptor instead.
 func (*DatabaseHost) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{60}
+	return file_plugin_proto_rawDescGZIP(), []int{61}
 }
 
 func (x *DatabaseHost) GetId() string {
@@ -4242,7 +4310,7 @@ type ListDatabaseHostsResponse struct {
 
 func (x *ListDatabaseHostsResponse) Reset() {
 	*x = ListDatabaseHostsResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[61]
+	mi := &file_plugin_proto_msgTypes[62]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4254,7 +4322,7 @@ func (x *ListDatabaseHostsResponse) String() string {
 func (*ListDatabaseHostsResponse) ProtoMessage() {}
 
 func (x *ListDatabaseHostsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[61]
+	mi := &file_plugin_proto_msgTypes[62]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4267,7 +4335,7 @@ func (x *ListDatabaseHostsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListDatabaseHostsResponse.ProtoReflect.Descriptor instead.
 func (*ListDatabaseHostsResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{61}
+	return file_plugin_proto_rawDescGZIP(), []int{62}
 }
 
 func (x *ListDatabaseHostsResponse) GetHosts() []*DatabaseHost {
@@ -4291,7 +4359,7 @@ type CreateDatabaseHostRequest struct {
 
 func (x *CreateDatabaseHostRequest) Reset() {
 	*x = CreateDatabaseHostRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[62]
+	mi := &file_plugin_proto_msgTypes[63]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4303,7 +4371,7 @@ func (x *CreateDatabaseHostRequest) String() string {
 func (*CreateDatabaseHostRequest) ProtoMessage() {}
 
 func (x *CreateDatabaseHostRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[62]
+	mi := &file_plugin_proto_msgTypes[63]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4316,7 +4384,7 @@ func (x *CreateDatabaseHostRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateDatabaseHostRequest.ProtoReflect.Descriptor instead.
 func (*CreateDatabaseHostRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{62}
+	return file_plugin_proto_rawDescGZIP(), []int{63}
 }
 
 func (x *CreateDatabaseHostRequest) GetName() string {
@@ -4376,7 +4444,7 @@ type UpdateDatabaseHostRequest struct {
 
 func (x *UpdateDatabaseHostRequest) Reset() {
 	*x = UpdateDatabaseHostRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[63]
+	mi := &file_plugin_proto_msgTypes[64]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4388,7 +4456,7 @@ func (x *UpdateDatabaseHostRequest) String() string {
 func (*UpdateDatabaseHostRequest) ProtoMessage() {}
 
 func (x *UpdateDatabaseHostRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[63]
+	mi := &file_plugin_proto_msgTypes[64]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4401,7 +4469,7 @@ func (x *UpdateDatabaseHostRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateDatabaseHostRequest.ProtoReflect.Descriptor instead.
 func (*UpdateDatabaseHostRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{63}
+	return file_plugin_proto_rawDescGZIP(), []int{64}
 }
 
 func (x *UpdateDatabaseHostRequest) GetId() string {
@@ -4467,7 +4535,7 @@ type FileInfo struct {
 
 func (x *FileInfo) Reset() {
 	*x = FileInfo{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[64]
+	mi := &file_plugin_proto_msgTypes[65]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4479,7 +4547,7 @@ func (x *FileInfo) String() string {
 func (*FileInfo) ProtoMessage() {}
 
 func (x *FileInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[64]
+	mi := &file_plugin_proto_msgTypes[65]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4492,7 +4560,7 @@ func (x *FileInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FileInfo.ProtoReflect.Descriptor instead.
 func (*FileInfo) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{64}
+	return file_plugin_proto_rawDescGZIP(), []int{65}
 }
 
 func (x *FileInfo) GetName() string {
@@ -4539,7 +4607,7 @@ type ListFilesResponse struct {
 
 func (x *ListFilesResponse) Reset() {
 	*x = ListFilesResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[65]
+	mi := &file_plugin_proto_msgTypes[66]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4551,7 +4619,7 @@ func (x *ListFilesResponse) String() string {
 func (*ListFilesResponse) ProtoMessage() {}
 
 func (x *ListFilesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[65]
+	mi := &file_plugin_proto_msgTypes[66]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4564,7 +4632,7 @@ func (x *ListFilesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListFilesResponse.ProtoReflect.Descriptor instead.
 func (*ListFilesResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{65}
+	return file_plugin_proto_rawDescGZIP(), []int{66}
 }
 
 func (x *ListFilesResponse) GetFiles() []*FileInfo {
@@ -4584,7 +4652,7 @@ type FilePathRequest struct {
 
 func (x *FilePathRequest) Reset() {
 	*x = FilePathRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[66]
+	mi := &file_plugin_proto_msgTypes[67]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4596,7 +4664,7 @@ func (x *FilePathRequest) String() string {
 func (*FilePathRequest) ProtoMessage() {}
 
 func (x *FilePathRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[66]
+	mi := &file_plugin_proto_msgTypes[67]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4609,7 +4677,7 @@ func (x *FilePathRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FilePathRequest.ProtoReflect.Descriptor instead.
 func (*FilePathRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{66}
+	return file_plugin_proto_rawDescGZIP(), []int{67}
 }
 
 func (x *FilePathRequest) GetServerId() string {
@@ -4636,7 +4704,7 @@ type FileContent struct {
 
 func (x *FileContent) Reset() {
 	*x = FileContent{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[67]
+	mi := &file_plugin_proto_msgTypes[68]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4648,7 +4716,7 @@ func (x *FileContent) String() string {
 func (*FileContent) ProtoMessage() {}
 
 func (x *FileContent) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[67]
+	mi := &file_plugin_proto_msgTypes[68]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4661,7 +4729,7 @@ func (x *FileContent) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FileContent.ProtoReflect.Descriptor instead.
 func (*FileContent) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{67}
+	return file_plugin_proto_rawDescGZIP(), []int{68}
 }
 
 func (x *FileContent) GetContent() []byte {
@@ -4689,7 +4757,7 @@ type WriteFileRequest struct {
 
 func (x *WriteFileRequest) Reset() {
 	*x = WriteFileRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[68]
+	mi := &file_plugin_proto_msgTypes[69]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4701,7 +4769,7 @@ func (x *WriteFileRequest) String() string {
 func (*WriteFileRequest) ProtoMessage() {}
 
 func (x *WriteFileRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[68]
+	mi := &file_plugin_proto_msgTypes[69]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4714,7 +4782,7 @@ func (x *WriteFileRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use WriteFileRequest.ProtoReflect.Descriptor instead.
 func (*WriteFileRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{68}
+	return file_plugin_proto_rawDescGZIP(), []int{69}
 }
 
 func (x *WriteFileRequest) GetServerId() string {
@@ -4749,7 +4817,7 @@ type MoveFileRequest struct {
 
 func (x *MoveFileRequest) Reset() {
 	*x = MoveFileRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[69]
+	mi := &file_plugin_proto_msgTypes[70]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4761,7 +4829,7 @@ func (x *MoveFileRequest) String() string {
 func (*MoveFileRequest) ProtoMessage() {}
 
 func (x *MoveFileRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[69]
+	mi := &file_plugin_proto_msgTypes[70]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4774,7 +4842,7 @@ func (x *MoveFileRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveFileRequest.ProtoReflect.Descriptor instead.
 func (*MoveFileRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{69}
+	return file_plugin_proto_rawDescGZIP(), []int{70}
 }
 
 func (x *MoveFileRequest) GetServerId() string {
@@ -4811,7 +4879,7 @@ type Backup struct {
 
 func (x *Backup) Reset() {
 	*x = Backup{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[70]
+	mi := &file_plugin_proto_msgTypes[71]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4823,7 +4891,7 @@ func (x *Backup) String() string {
 func (*Backup) ProtoMessage() {}
 
 func (x *Backup) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[70]
+	mi := &file_plugin_proto_msgTypes[71]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4836,7 +4904,7 @@ func (x *Backup) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Backup.ProtoReflect.Descriptor instead.
 func (*Backup) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{70}
+	return file_plugin_proto_rawDescGZIP(), []int{71}
 }
 
 func (x *Backup) GetId() string {
@@ -4876,7 +4944,7 @@ type ListBackupsResponse struct {
 
 func (x *ListBackupsResponse) Reset() {
 	*x = ListBackupsResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[71]
+	mi := &file_plugin_proto_msgTypes[72]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4888,7 +4956,7 @@ func (x *ListBackupsResponse) String() string {
 func (*ListBackupsResponse) ProtoMessage() {}
 
 func (x *ListBackupsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[71]
+	mi := &file_plugin_proto_msgTypes[72]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4901,7 +4969,7 @@ func (x *ListBackupsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListBackupsResponse.ProtoReflect.Descriptor instead.
 func (*ListBackupsResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{71}
+	return file_plugin_proto_rawDescGZIP(), []int{72}
 }
 
 func (x *ListBackupsResponse) GetBackups() []*Backup {
@@ -4921,7 +4989,7 @@ type CreateBackupRequest struct {
 
 func (x *CreateBackupRequest) Reset() {
 	*x = CreateBackupRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[72]
+	mi := &file_plugin_proto_msgTypes[73]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4933,7 +5001,7 @@ func (x *CreateBackupRequest) String() string {
 func (*CreateBackupRequest) ProtoMessage() {}
 
 func (x *CreateBackupRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[72]
+	mi := &file_plugin_proto_msgTypes[73]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4946,7 +5014,7 @@ func (x *CreateBackupRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateBackupRequest.ProtoReflect.Descriptor instead.
 func (*CreateBackupRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{72}
+	return file_plugin_proto_rawDescGZIP(), []int{73}
 }
 
 func (x *CreateBackupRequest) GetServerId() string {
@@ -4973,7 +5041,7 @@ type DeleteBackupRequest struct {
 
 func (x *DeleteBackupRequest) Reset() {
 	*x = DeleteBackupRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[73]
+	mi := &file_plugin_proto_msgTypes[74]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4985,7 +5053,7 @@ func (x *DeleteBackupRequest) String() string {
 func (*DeleteBackupRequest) ProtoMessage() {}
 
 func (x *DeleteBackupRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[73]
+	mi := &file_plugin_proto_msgTypes[74]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4998,7 +5066,7 @@ func (x *DeleteBackupRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteBackupRequest.ProtoReflect.Descriptor instead.
 func (*DeleteBackupRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{73}
+	return file_plugin_proto_rawDescGZIP(), []int{74}
 }
 
 func (x *DeleteBackupRequest) GetServerId() string {
@@ -5030,7 +5098,7 @@ type Node struct {
 
 func (x *Node) Reset() {
 	*x = Node{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[74]
+	mi := &file_plugin_proto_msgTypes[75]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5042,7 +5110,7 @@ func (x *Node) String() string {
 func (*Node) ProtoMessage() {}
 
 func (x *Node) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[74]
+	mi := &file_plugin_proto_msgTypes[75]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5055,7 +5123,7 @@ func (x *Node) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Node.ProtoReflect.Descriptor instead.
 func (*Node) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{74}
+	return file_plugin_proto_rawDescGZIP(), []int{75}
 }
 
 func (x *Node) GetId() string {
@@ -5109,7 +5177,7 @@ type ListNodesResponse struct {
 
 func (x *ListNodesResponse) Reset() {
 	*x = ListNodesResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[75]
+	mi := &file_plugin_proto_msgTypes[76]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5121,7 +5189,7 @@ func (x *ListNodesResponse) String() string {
 func (*ListNodesResponse) ProtoMessage() {}
 
 func (x *ListNodesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[75]
+	mi := &file_plugin_proto_msgTypes[76]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5134,7 +5202,7 @@ func (x *ListNodesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListNodesResponse.ProtoReflect.Descriptor instead.
 func (*ListNodesResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{75}
+	return file_plugin_proto_rawDescGZIP(), []int{76}
 }
 
 func (x *ListNodesResponse) GetNodes() []*Node {
@@ -5155,7 +5223,7 @@ type CreateNodeRequest struct {
 
 func (x *CreateNodeRequest) Reset() {
 	*x = CreateNodeRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[76]
+	mi := &file_plugin_proto_msgTypes[77]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5167,7 +5235,7 @@ func (x *CreateNodeRequest) String() string {
 func (*CreateNodeRequest) ProtoMessage() {}
 
 func (x *CreateNodeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[76]
+	mi := &file_plugin_proto_msgTypes[77]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5180,7 +5248,7 @@ func (x *CreateNodeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateNodeRequest.ProtoReflect.Descriptor instead.
 func (*CreateNodeRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{76}
+	return file_plugin_proto_rawDescGZIP(), []int{77}
 }
 
 func (x *CreateNodeRequest) GetName() string {
@@ -5214,7 +5282,7 @@ type NodeWithToken struct {
 
 func (x *NodeWithToken) Reset() {
 	*x = NodeWithToken{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[77]
+	mi := &file_plugin_proto_msgTypes[78]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5226,7 +5294,7 @@ func (x *NodeWithToken) String() string {
 func (*NodeWithToken) ProtoMessage() {}
 
 func (x *NodeWithToken) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[77]
+	mi := &file_plugin_proto_msgTypes[78]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5239,7 +5307,7 @@ func (x *NodeWithToken) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use NodeWithToken.ProtoReflect.Descriptor instead.
 func (*NodeWithToken) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{77}
+	return file_plugin_proto_rawDescGZIP(), []int{78}
 }
 
 func (x *NodeWithToken) GetNode() *Node {
@@ -5266,7 +5334,7 @@ type NodeToken struct {
 
 func (x *NodeToken) Reset() {
 	*x = NodeToken{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[78]
+	mi := &file_plugin_proto_msgTypes[79]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5278,7 +5346,7 @@ func (x *NodeToken) String() string {
 func (*NodeToken) ProtoMessage() {}
 
 func (x *NodeToken) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[78]
+	mi := &file_plugin_proto_msgTypes[79]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5291,7 +5359,7 @@ func (x *NodeToken) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use NodeToken.ProtoReflect.Descriptor instead.
 func (*NodeToken) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{78}
+	return file_plugin_proto_rawDescGZIP(), []int{79}
 }
 
 func (x *NodeToken) GetTokenId() string {
@@ -5328,7 +5396,7 @@ type Package struct {
 
 func (x *Package) Reset() {
 	*x = Package{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[79]
+	mi := &file_plugin_proto_msgTypes[80]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5340,7 +5408,7 @@ func (x *Package) String() string {
 func (*Package) ProtoMessage() {}
 
 func (x *Package) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[79]
+	mi := &file_plugin_proto_msgTypes[80]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5353,7 +5421,7 @@ func (x *Package) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Package.ProtoReflect.Descriptor instead.
 func (*Package) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{79}
+	return file_plugin_proto_rawDescGZIP(), []int{80}
 }
 
 func (x *Package) GetId() string {
@@ -5442,7 +5510,7 @@ type ListPackagesResponse struct {
 
 func (x *ListPackagesResponse) Reset() {
 	*x = ListPackagesResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[80]
+	mi := &file_plugin_proto_msgTypes[81]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5454,7 +5522,7 @@ func (x *ListPackagesResponse) String() string {
 func (*ListPackagesResponse) ProtoMessage() {}
 
 func (x *ListPackagesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[80]
+	mi := &file_plugin_proto_msgTypes[81]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5467,7 +5535,7 @@ func (x *ListPackagesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListPackagesResponse.ProtoReflect.Descriptor instead.
 func (*ListPackagesResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{80}
+	return file_plugin_proto_rawDescGZIP(), []int{81}
 }
 
 func (x *ListPackagesResponse) GetPackages() []*Package {
@@ -5495,7 +5563,7 @@ type CreatePackageRequest struct {
 
 func (x *CreatePackageRequest) Reset() {
 	*x = CreatePackageRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[81]
+	mi := &file_plugin_proto_msgTypes[82]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5507,7 +5575,7 @@ func (x *CreatePackageRequest) String() string {
 func (*CreatePackageRequest) ProtoMessage() {}
 
 func (x *CreatePackageRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[81]
+	mi := &file_plugin_proto_msgTypes[82]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5520,7 +5588,7 @@ func (x *CreatePackageRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreatePackageRequest.ProtoReflect.Descriptor instead.
 func (*CreatePackageRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{81}
+	return file_plugin_proto_rawDescGZIP(), []int{82}
 }
 
 func (x *CreatePackageRequest) GetName() string {
@@ -5612,7 +5680,7 @@ type UpdatePackageRequest struct {
 
 func (x *UpdatePackageRequest) Reset() {
 	*x = UpdatePackageRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[82]
+	mi := &file_plugin_proto_msgTypes[83]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5624,7 +5692,7 @@ func (x *UpdatePackageRequest) String() string {
 func (*UpdatePackageRequest) ProtoMessage() {}
 
 func (x *UpdatePackageRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[82]
+	mi := &file_plugin_proto_msgTypes[83]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5637,7 +5705,7 @@ func (x *UpdatePackageRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdatePackageRequest.ProtoReflect.Descriptor instead.
 func (*UpdatePackageRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{82}
+	return file_plugin_proto_rawDescGZIP(), []int{83}
 }
 
 func (x *UpdatePackageRequest) GetId() string {
@@ -5730,7 +5798,7 @@ type IPBan struct {
 
 func (x *IPBan) Reset() {
 	*x = IPBan{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[83]
+	mi := &file_plugin_proto_msgTypes[84]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5742,7 +5810,7 @@ func (x *IPBan) String() string {
 func (*IPBan) ProtoMessage() {}
 
 func (x *IPBan) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[83]
+	mi := &file_plugin_proto_msgTypes[84]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5755,7 +5823,7 @@ func (x *IPBan) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IPBan.ProtoReflect.Descriptor instead.
 func (*IPBan) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{83}
+	return file_plugin_proto_rawDescGZIP(), []int{84}
 }
 
 func (x *IPBan) GetId() string {
@@ -5795,7 +5863,7 @@ type ListIPBansResponse struct {
 
 func (x *ListIPBansResponse) Reset() {
 	*x = ListIPBansResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[84]
+	mi := &file_plugin_proto_msgTypes[85]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5807,7 +5875,7 @@ func (x *ListIPBansResponse) String() string {
 func (*ListIPBansResponse) ProtoMessage() {}
 
 func (x *ListIPBansResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[84]
+	mi := &file_plugin_proto_msgTypes[85]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5820,7 +5888,7 @@ func (x *ListIPBansResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListIPBansResponse.ProtoReflect.Descriptor instead.
 func (*ListIPBansResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{84}
+	return file_plugin_proto_rawDescGZIP(), []int{85}
 }
 
 func (x *ListIPBansResponse) GetBans() []*IPBan {
@@ -5840,7 +5908,7 @@ type CreateIPBanRequest struct {
 
 func (x *CreateIPBanRequest) Reset() {
 	*x = CreateIPBanRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[85]
+	mi := &file_plugin_proto_msgTypes[86]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5852,7 +5920,7 @@ func (x *CreateIPBanRequest) String() string {
 func (*CreateIPBanRequest) ProtoMessage() {}
 
 func (x *CreateIPBanRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[85]
+	mi := &file_plugin_proto_msgTypes[86]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5865,7 +5933,7 @@ func (x *CreateIPBanRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateIPBanRequest.ProtoReflect.Descriptor instead.
 func (*CreateIPBanRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{85}
+	return file_plugin_proto_rawDescGZIP(), []int{86}
 }
 
 func (x *CreateIPBanRequest) GetIp() string {
@@ -5893,7 +5961,7 @@ type Settings struct {
 
 func (x *Settings) Reset() {
 	*x = Settings{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[86]
+	mi := &file_plugin_proto_msgTypes[87]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5905,7 +5973,7 @@ func (x *Settings) String() string {
 func (*Settings) ProtoMessage() {}
 
 func (x *Settings) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[86]
+	mi := &file_plugin_proto_msgTypes[87]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5918,7 +5986,7 @@ func (x *Settings) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Settings.ProtoReflect.Descriptor instead.
 func (*Settings) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{86}
+	return file_plugin_proto_rawDescGZIP(), []int{87}
 }
 
 func (x *Settings) GetRegistrationEnabled() bool {
@@ -5952,7 +6020,7 @@ type ActivityLog struct {
 
 func (x *ActivityLog) Reset() {
 	*x = ActivityLog{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[87]
+	mi := &file_plugin_proto_msgTypes[88]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5964,7 +6032,7 @@ func (x *ActivityLog) String() string {
 func (*ActivityLog) ProtoMessage() {}
 
 func (x *ActivityLog) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[87]
+	mi := &file_plugin_proto_msgTypes[88]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5977,7 +6045,7 @@ func (x *ActivityLog) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ActivityLog.ProtoReflect.Descriptor instead.
 func (*ActivityLog) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{87}
+	return file_plugin_proto_rawDescGZIP(), []int{88}
 }
 
 func (x *ActivityLog) GetId() string {
@@ -6048,7 +6116,7 @@ type GetLogsRequest struct {
 
 func (x *GetLogsRequest) Reset() {
 	*x = GetLogsRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[88]
+	mi := &file_plugin_proto_msgTypes[89]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6060,7 +6128,7 @@ func (x *GetLogsRequest) String() string {
 func (*GetLogsRequest) ProtoMessage() {}
 
 func (x *GetLogsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[88]
+	mi := &file_plugin_proto_msgTypes[89]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6073,7 +6141,7 @@ func (x *GetLogsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetLogsRequest.ProtoReflect.Descriptor instead.
 func (*GetLogsRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{88}
+	return file_plugin_proto_rawDescGZIP(), []int{89}
 }
 
 func (x *GetLogsRequest) GetLimit() int32 {
@@ -6114,7 +6182,7 @@ type GetLogsResponse struct {
 
 func (x *GetLogsResponse) Reset() {
 	*x = GetLogsResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[89]
+	mi := &file_plugin_proto_msgTypes[90]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6126,7 +6194,7 @@ func (x *GetLogsResponse) String() string {
 func (*GetLogsResponse) ProtoMessage() {}
 
 func (x *GetLogsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[89]
+	mi := &file_plugin_proto_msgTypes[90]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6139,7 +6207,7 @@ func (x *GetLogsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetLogsResponse.ProtoReflect.Descriptor instead.
 func (*GetLogsResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{89}
+	return file_plugin_proto_rawDescGZIP(), []int{90}
 }
 
 func (x *GetLogsResponse) GetLogs() []*ActivityLog {
@@ -6167,7 +6235,7 @@ type LogRequest struct {
 
 func (x *LogRequest) Reset() {
 	*x = LogRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[90]
+	mi := &file_plugin_proto_msgTypes[91]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6179,7 +6247,7 @@ func (x *LogRequest) String() string {
 func (*LogRequest) ProtoMessage() {}
 
 func (x *LogRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[90]
+	mi := &file_plugin_proto_msgTypes[91]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6192,7 +6260,7 @@ func (x *LogRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LogRequest.ProtoReflect.Descriptor instead.
 func (*LogRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{90}
+	return file_plugin_proto_rawDescGZIP(), []int{91}
 }
 
 func (x *LogRequest) GetLevel() string {
@@ -6218,7 +6286,7 @@ type KVRequest struct {
 
 func (x *KVRequest) Reset() {
 	*x = KVRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[91]
+	mi := &file_plugin_proto_msgTypes[92]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6230,7 +6298,7 @@ func (x *KVRequest) String() string {
 func (*KVRequest) ProtoMessage() {}
 
 func (x *KVRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[91]
+	mi := &file_plugin_proto_msgTypes[92]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6243,7 +6311,7 @@ func (x *KVRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use KVRequest.ProtoReflect.Descriptor instead.
 func (*KVRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{91}
+	return file_plugin_proto_rawDescGZIP(), []int{92}
 }
 
 func (x *KVRequest) GetKey() string {
@@ -6263,7 +6331,7 @@ type KVResponse struct {
 
 func (x *KVResponse) Reset() {
 	*x = KVResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[92]
+	mi := &file_plugin_proto_msgTypes[93]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6275,7 +6343,7 @@ func (x *KVResponse) String() string {
 func (*KVResponse) ProtoMessage() {}
 
 func (x *KVResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[92]
+	mi := &file_plugin_proto_msgTypes[93]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6288,7 +6356,7 @@ func (x *KVResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use KVResponse.ProtoReflect.Descriptor instead.
 func (*KVResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{92}
+	return file_plugin_proto_rawDescGZIP(), []int{93}
 }
 
 func (x *KVResponse) GetValue() string {
@@ -6315,7 +6383,7 @@ type KVSetRequest struct {
 
 func (x *KVSetRequest) Reset() {
 	*x = KVSetRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[93]
+	mi := &file_plugin_proto_msgTypes[94]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6327,7 +6395,7 @@ func (x *KVSetRequest) String() string {
 func (*KVSetRequest) ProtoMessage() {}
 
 func (x *KVSetRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[93]
+	mi := &file_plugin_proto_msgTypes[94]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6340,7 +6408,7 @@ func (x *KVSetRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use KVSetRequest.ProtoReflect.Descriptor instead.
 func (*KVSetRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{93}
+	return file_plugin_proto_rawDescGZIP(), []int{94}
 }
 
 func (x *KVSetRequest) GetKey() string {
@@ -6367,7 +6435,7 @@ type QueryDBRequest struct {
 
 func (x *QueryDBRequest) Reset() {
 	*x = QueryDBRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[94]
+	mi := &file_plugin_proto_msgTypes[95]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6379,7 +6447,7 @@ func (x *QueryDBRequest) String() string {
 func (*QueryDBRequest) ProtoMessage() {}
 
 func (x *QueryDBRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[94]
+	mi := &file_plugin_proto_msgTypes[95]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6392,7 +6460,7 @@ func (x *QueryDBRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use QueryDBRequest.ProtoReflect.Descriptor instead.
 func (*QueryDBRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{94}
+	return file_plugin_proto_rawDescGZIP(), []int{95}
 }
 
 func (x *QueryDBRequest) GetQuery() string {
@@ -6418,7 +6486,7 @@ type QueryDBResponse struct {
 
 func (x *QueryDBResponse) Reset() {
 	*x = QueryDBResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[95]
+	mi := &file_plugin_proto_msgTypes[96]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6430,7 +6498,7 @@ func (x *QueryDBResponse) String() string {
 func (*QueryDBResponse) ProtoMessage() {}
 
 func (x *QueryDBResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[95]
+	mi := &file_plugin_proto_msgTypes[96]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6443,7 +6511,7 @@ func (x *QueryDBResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use QueryDBResponse.ProtoReflect.Descriptor instead.
 func (*QueryDBResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{95}
+	return file_plugin_proto_rawDescGZIP(), []int{96}
 }
 
 func (x *QueryDBResponse) GetRows() [][]byte {
@@ -6463,7 +6531,7 @@ type BroadcastEventRequest struct {
 
 func (x *BroadcastEventRequest) Reset() {
 	*x = BroadcastEventRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[96]
+	mi := &file_plugin_proto_msgTypes[97]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6475,7 +6543,7 @@ func (x *BroadcastEventRequest) String() string {
 func (*BroadcastEventRequest) ProtoMessage() {}
 
 func (x *BroadcastEventRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[96]
+	mi := &file_plugin_proto_msgTypes[97]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6488,7 +6556,7 @@ func (x *BroadcastEventRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BroadcastEventRequest.ProtoReflect.Descriptor instead.
 func (*BroadcastEventRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{96}
+	return file_plugin_proto_rawDescGZIP(), []int{97}
 }
 
 func (x *BroadcastEventRequest) GetEventType() string {
@@ -6517,7 +6585,7 @@ type NotificationRequest struct {
 
 func (x *NotificationRequest) Reset() {
 	*x = NotificationRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[97]
+	mi := &file_plugin_proto_msgTypes[98]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6529,7 +6597,7 @@ func (x *NotificationRequest) String() string {
 func (*NotificationRequest) ProtoMessage() {}
 
 func (x *NotificationRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[97]
+	mi := &file_plugin_proto_msgTypes[98]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6542,7 +6610,7 @@ func (x *NotificationRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use NotificationRequest.ProtoReflect.Descriptor instead.
 func (*NotificationRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{97}
+	return file_plugin_proto_rawDescGZIP(), []int{98}
 }
 
 func (x *NotificationRequest) GetUserId() string {
@@ -6587,7 +6655,7 @@ type PluginHTTPRequest struct {
 
 func (x *PluginHTTPRequest) Reset() {
 	*x = PluginHTTPRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[98]
+	mi := &file_plugin_proto_msgTypes[99]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6599,7 +6667,7 @@ func (x *PluginHTTPRequest) String() string {
 func (*PluginHTTPRequest) ProtoMessage() {}
 
 func (x *PluginHTTPRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[98]
+	mi := &file_plugin_proto_msgTypes[99]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6612,7 +6680,7 @@ func (x *PluginHTTPRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PluginHTTPRequest.ProtoReflect.Descriptor instead.
 func (*PluginHTTPRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{98}
+	return file_plugin_proto_rawDescGZIP(), []int{99}
 }
 
 func (x *PluginHTTPRequest) GetMethod() string {
@@ -6662,7 +6730,7 @@ type PluginHTTPResponse struct {
 
 func (x *PluginHTTPResponse) Reset() {
 	*x = PluginHTTPResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[99]
+	mi := &file_plugin_proto_msgTypes[100]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6674,7 +6742,7 @@ func (x *PluginHTTPResponse) String() string {
 func (*PluginHTTPResponse) ProtoMessage() {}
 
 func (x *PluginHTTPResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[99]
+	mi := &file_plugin_proto_msgTypes[100]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6687,7 +6755,7 @@ func (x *PluginHTTPResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PluginHTTPResponse.ProtoReflect.Descriptor instead.
 func (*PluginHTTPResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{99}
+	return file_plugin_proto_rawDescGZIP(), []int{100}
 }
 
 func (x *PluginHTTPResponse) GetStatus() int32 {
@@ -6730,7 +6798,7 @@ type CallPluginRequest struct {
 
 func (x *CallPluginRequest) Reset() {
 	*x = CallPluginRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[100]
+	mi := &file_plugin_proto_msgTypes[101]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6742,7 +6810,7 @@ func (x *CallPluginRequest) String() string {
 func (*CallPluginRequest) ProtoMessage() {}
 
 func (x *CallPluginRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[100]
+	mi := &file_plugin_proto_msgTypes[101]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6755,7 +6823,7 @@ func (x *CallPluginRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CallPluginRequest.ProtoReflect.Descriptor instead.
 func (*CallPluginRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{100}
+	return file_plugin_proto_rawDescGZIP(), []int{101}
 }
 
 func (x *CallPluginRequest) GetPluginId() string {
@@ -6789,7 +6857,7 @@ type CallPluginResponse struct {
 
 func (x *CallPluginResponse) Reset() {
 	*x = CallPluginResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[101]
+	mi := &file_plugin_proto_msgTypes[102]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6801,7 +6869,7 @@ func (x *CallPluginResponse) String() string {
 func (*CallPluginResponse) ProtoMessage() {}
 
 func (x *CallPluginResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[101]
+	mi := &file_plugin_proto_msgTypes[102]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6814,7 +6882,7 @@ func (x *CallPluginResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CallPluginResponse.ProtoReflect.Descriptor instead.
 func (*CallPluginResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{101}
+	return file_plugin_proto_rawDescGZIP(), []int{102}
 }
 
 func (x *CallPluginResponse) GetData() []byte {
@@ -6842,7 +6910,7 @@ type AddonTypeInfo struct {
 
 func (x *AddonTypeInfo) Reset() {
 	*x = AddonTypeInfo{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[102]
+	mi := &file_plugin_proto_msgTypes[103]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6854,7 +6922,7 @@ func (x *AddonTypeInfo) String() string {
 func (*AddonTypeInfo) ProtoMessage() {}
 
 func (x *AddonTypeInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[102]
+	mi := &file_plugin_proto_msgTypes[103]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6867,7 +6935,7 @@ func (x *AddonTypeInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AddonTypeInfo.ProtoReflect.Descriptor instead.
 func (*AddonTypeInfo) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{102}
+	return file_plugin_proto_rawDescGZIP(), []int{103}
 }
 
 func (x *AddonTypeInfo) GetTypeId() string {
@@ -6907,7 +6975,7 @@ type AddonTypeRequest struct {
 
 func (x *AddonTypeRequest) Reset() {
 	*x = AddonTypeRequest{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[103]
+	mi := &file_plugin_proto_msgTypes[104]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6919,7 +6987,7 @@ func (x *AddonTypeRequest) String() string {
 func (*AddonTypeRequest) ProtoMessage() {}
 
 func (x *AddonTypeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[103]
+	mi := &file_plugin_proto_msgTypes[104]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6932,7 +7000,7 @@ func (x *AddonTypeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AddonTypeRequest.ProtoReflect.Descriptor instead.
 func (*AddonTypeRequest) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{103}
+	return file_plugin_proto_rawDescGZIP(), []int{104}
 }
 
 func (x *AddonTypeRequest) GetTypeId() string {
@@ -7003,7 +7071,7 @@ type AddonTypeResponse struct {
 
 func (x *AddonTypeResponse) Reset() {
 	*x = AddonTypeResponse{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[104]
+	mi := &file_plugin_proto_msgTypes[105]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7015,7 +7083,7 @@ func (x *AddonTypeResponse) String() string {
 func (*AddonTypeResponse) ProtoMessage() {}
 
 func (x *AddonTypeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[104]
+	mi := &file_plugin_proto_msgTypes[105]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7028,7 +7096,7 @@ func (x *AddonTypeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AddonTypeResponse.ProtoReflect.Descriptor instead.
 func (*AddonTypeResponse) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{104}
+	return file_plugin_proto_rawDescGZIP(), []int{105}
 }
 
 func (x *AddonTypeResponse) GetSuccess() bool {
@@ -7075,7 +7143,7 @@ type AddonInstallAction struct {
 
 func (x *AddonInstallAction) Reset() {
 	*x = AddonInstallAction{}
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[105]
+	mi := &file_plugin_proto_msgTypes[106]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7087,7 +7155,7 @@ func (x *AddonInstallAction) String() string {
 func (*AddonInstallAction) ProtoMessage() {}
 
 func (x *AddonInstallAction) ProtoReflect() protoreflect.Message {
-	mi := &file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[105]
+	mi := &file_plugin_proto_msgTypes[106]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7100,7 +7168,7 @@ func (x *AddonInstallAction) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AddonInstallAction.ProtoReflect.Descriptor instead.
 func (*AddonInstallAction) Descriptor() ([]byte, []int) {
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP(), []int{105}
+	return file_plugin_proto_rawDescGZIP(), []int{106}
 }
 
 func (x *AddonInstallAction) GetType() AddonInstallAction_ActionType {
@@ -7159,11 +7227,11 @@ func (x *AddonInstallAction) GetNodeEndpoint() string {
 	return ""
 }
 
-var File_Birdactyl_Go_SDK_main_proto_plugin_proto protoreflect.FileDescriptor
+var File_plugin_proto protoreflect.FileDescriptor
 
-const file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDesc = "" +
+const file_plugin_proto_rawDesc = "" +
 	"\n" +
-	"(Birdactyl-Go-SDK-main/proto/plugin.proto\x12\aplugins\"\xb9\x03\n" +
+	"\fplugin.proto\x12\aplugins\"\xb9\x03\n" +
 	"\rPluginMessage\x121\n" +
 	"\bregister\x18\x01 \x01(\v2\x13.plugins.PluginInfoH\x00R\bregister\x12?\n" +
 	"\x0eevent_response\x18\x02 \x01(\v2\x16.plugins.EventResponseH\x00R\reventResponse\x12<\n" +
@@ -7269,10 +7337,17 @@ const file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDesc = "" +
 	"\fNotification\x12\x14\n" +
 	"\x05title\x18\x01 \x01(\tR\x05title\x12\x18\n" +
 	"\amessage\x18\x02 \x01(\tR\amessage\x12\x12\n" +
-	"\x04type\x18\x03 \x01(\tR\x04type\"7\n" +
+	"\x04type\x18\x03 \x01(\tR\x04type\"p\n" +
 	"\tRouteInfo\x12\x16\n" +
 	"\x06method\x18\x01 \x01(\tR\x06method\x12\x12\n" +
-	"\x04path\x18\x02 \x01(\tR\x04path\"2\n" +
+	"\x04path\x18\x02 \x01(\tR\x04path\x127\n" +
+	"\n" +
+	"rate_limit\x18\x03 \x01(\v2\x18.plugins.RateLimitConfigR\trateLimit\"z\n" +
+	"\x0fRateLimitConfig\x12\x16\n" +
+	"\x06preset\x18\x01 \x01(\tR\x06preset\x12.\n" +
+	"\x13requests_per_minute\x18\x02 \x01(\x05R\x11requestsPerMinute\x12\x1f\n" +
+	"\vburst_limit\x18\x03 \x01(\x05R\n" +
+	"burstLimit\"2\n" +
 	"\fScheduleInfo\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n" +
 	"\x04cron\x18\x02 \x01(\tR\x04cron\"\xb4\x01\n" +
@@ -7861,20 +7936,20 @@ const file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDesc = "" +
 	"\x16io.birdactyl.sdk.protoP\x01Z+github.com/Birdactyl/Birdactyl-Go-SDK/protob\x06proto3"
 
 var (
-	file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescOnce sync.Once
-	file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescData []byte
+	file_plugin_proto_rawDescOnce sync.Once
+	file_plugin_proto_rawDescData []byte
 )
 
-func file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescGZIP() []byte {
-	file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescOnce.Do(func() {
-		file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDesc), len(file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDesc)))
+func file_plugin_proto_rawDescGZIP() []byte {
+	file_plugin_proto_rawDescOnce.Do(func() {
+		file_plugin_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_plugin_proto_rawDesc), len(file_plugin_proto_rawDesc)))
 	})
-	return file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDescData
+	return file_plugin_proto_rawDescData
 }
 
-var file_Birdactyl_Go_SDK_main_proto_plugin_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
-var file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes = make([]protoimpl.MessageInfo, 117)
-var file_Birdactyl_Go_SDK_main_proto_plugin_proto_goTypes = []any{
+var file_plugin_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
+var file_plugin_proto_msgTypes = make([]protoimpl.MessageInfo, 118)
+var file_plugin_proto_goTypes = []any{
 	(MixinResponse_Action)(0),          // 0: plugins.MixinResponse.Action
 	(AddonInstallAction_ActionType)(0), // 1: plugins.AddonInstallAction.ActionType
 	(*PluginMessage)(nil),              // 2: plugins.PluginMessage
@@ -7895,124 +7970,125 @@ var file_Birdactyl_Go_SDK_main_proto_plugin_proto_goTypes = []any{
 	(*MixinResponse)(nil),              // 17: plugins.MixinResponse
 	(*Notification)(nil),               // 18: plugins.Notification
 	(*RouteInfo)(nil),                  // 19: plugins.RouteInfo
-	(*ScheduleInfo)(nil),               // 20: plugins.ScheduleInfo
-	(*Event)(nil),                      // 21: plugins.Event
-	(*EventResponse)(nil),              // 22: plugins.EventResponse
-	(*HTTPRequest)(nil),                // 23: plugins.HTTPRequest
-	(*HTTPResponse)(nil),               // 24: plugins.HTTPResponse
-	(*ScheduleRequest)(nil),            // 25: plugins.ScheduleRequest
-	(*Server)(nil),                     // 26: plugins.Server
-	(*ListServersRequest)(nil),         // 27: plugins.ListServersRequest
-	(*ListServersResponse)(nil),        // 28: plugins.ListServersResponse
-	(*CreateServerRequest)(nil),        // 29: plugins.CreateServerRequest
-	(*UpdateServerRequest)(nil),        // 30: plugins.UpdateServerRequest
-	(*TransferServerRequest)(nil),      // 31: plugins.TransferServerRequest
-	(*ConsoleLogRequest)(nil),          // 32: plugins.ConsoleLogRequest
-	(*ConsoleLogResponse)(nil),         // 33: plugins.ConsoleLogResponse
-	(*SendCommandRequest)(nil),         // 34: plugins.SendCommandRequest
-	(*ServerStats)(nil),                // 35: plugins.ServerStats
-	(*AllocationRequest)(nil),          // 36: plugins.AllocationRequest
-	(*CompressRequest)(nil),            // 37: plugins.CompressRequest
-	(*UpdateVariablesRequest)(nil),     // 38: plugins.UpdateVariablesRequest
-	(*StreamConsoleRequest)(nil),       // 39: plugins.StreamConsoleRequest
-	(*ConsoleLine)(nil),                // 40: plugins.ConsoleLine
-	(*FullLogResponse)(nil),            // 41: plugins.FullLogResponse
-	(*SearchLogsRequest)(nil),          // 42: plugins.SearchLogsRequest
-	(*SearchLogsResponse)(nil),         // 43: plugins.SearchLogsResponse
-	(*LogMatch)(nil),                   // 44: plugins.LogMatch
-	(*LogFilesResponse)(nil),           // 45: plugins.LogFilesResponse
-	(*LogFileInfo)(nil),                // 46: plugins.LogFileInfo
-	(*ReadLogFileRequest)(nil),         // 47: plugins.ReadLogFileRequest
-	(*User)(nil),                       // 48: plugins.User
-	(*ListUsersRequest)(nil),           // 49: plugins.ListUsersRequest
-	(*ListUsersResponse)(nil),          // 50: plugins.ListUsersResponse
-	(*CreateUserRequest)(nil),          // 51: plugins.CreateUserRequest
-	(*UpdateUserRequest)(nil),          // 52: plugins.UpdateUserRequest
-	(*SetUserResourcesRequest)(nil),    // 53: plugins.SetUserResourcesRequest
-	(*Subuser)(nil),                    // 54: plugins.Subuser
-	(*ListSubusersResponse)(nil),       // 55: plugins.ListSubusersResponse
-	(*AddSubuserRequest)(nil),          // 56: plugins.AddSubuserRequest
-	(*UpdateSubuserRequest)(nil),       // 57: plugins.UpdateSubuserRequest
-	(*RemoveSubuserRequest)(nil),       // 58: plugins.RemoveSubuserRequest
-	(*Database)(nil),                   // 59: plugins.Database
-	(*ListDatabasesResponse)(nil),      // 60: plugins.ListDatabasesResponse
-	(*CreateDatabaseRequest)(nil),      // 61: plugins.CreateDatabaseRequest
-	(*DatabaseHost)(nil),               // 62: plugins.DatabaseHost
-	(*ListDatabaseHostsResponse)(nil),  // 63: plugins.ListDatabaseHostsResponse
-	(*CreateDatabaseHostRequest)(nil),  // 64: plugins.CreateDatabaseHostRequest
-	(*UpdateDatabaseHostRequest)(nil),  // 65: plugins.UpdateDatabaseHostRequest
-	(*FileInfo)(nil),                   // 66: plugins.FileInfo
-	(*ListFilesResponse)(nil),          // 67: plugins.ListFilesResponse
-	(*FilePathRequest)(nil),            // 68: plugins.FilePathRequest
-	(*FileContent)(nil),                // 69: plugins.FileContent
-	(*WriteFileRequest)(nil),           // 70: plugins.WriteFileRequest
-	(*MoveFileRequest)(nil),            // 71: plugins.MoveFileRequest
-	(*Backup)(nil),                     // 72: plugins.Backup
-	(*ListBackupsResponse)(nil),        // 73: plugins.ListBackupsResponse
-	(*CreateBackupRequest)(nil),        // 74: plugins.CreateBackupRequest
-	(*DeleteBackupRequest)(nil),        // 75: plugins.DeleteBackupRequest
-	(*Node)(nil),                       // 76: plugins.Node
-	(*ListNodesResponse)(nil),          // 77: plugins.ListNodesResponse
-	(*CreateNodeRequest)(nil),          // 78: plugins.CreateNodeRequest
-	(*NodeWithToken)(nil),              // 79: plugins.NodeWithToken
-	(*NodeToken)(nil),                  // 80: plugins.NodeToken
-	(*Package)(nil),                    // 81: plugins.Package
-	(*ListPackagesResponse)(nil),       // 82: plugins.ListPackagesResponse
-	(*CreatePackageRequest)(nil),       // 83: plugins.CreatePackageRequest
-	(*UpdatePackageRequest)(nil),       // 84: plugins.UpdatePackageRequest
-	(*IPBan)(nil),                      // 85: plugins.IPBan
-	(*ListIPBansResponse)(nil),         // 86: plugins.ListIPBansResponse
-	(*CreateIPBanRequest)(nil),         // 87: plugins.CreateIPBanRequest
-	(*Settings)(nil),                   // 88: plugins.Settings
-	(*ActivityLog)(nil),                // 89: plugins.ActivityLog
-	(*GetLogsRequest)(nil),             // 90: plugins.GetLogsRequest
-	(*GetLogsResponse)(nil),            // 91: plugins.GetLogsResponse
-	(*LogRequest)(nil),                 // 92: plugins.LogRequest
-	(*KVRequest)(nil),                  // 93: plugins.KVRequest
-	(*KVResponse)(nil),                 // 94: plugins.KVResponse
-	(*KVSetRequest)(nil),               // 95: plugins.KVSetRequest
-	(*QueryDBRequest)(nil),             // 96: plugins.QueryDBRequest
-	(*QueryDBResponse)(nil),            // 97: plugins.QueryDBResponse
-	(*BroadcastEventRequest)(nil),      // 98: plugins.BroadcastEventRequest
-	(*NotificationRequest)(nil),        // 99: plugins.NotificationRequest
-	(*PluginHTTPRequest)(nil),          // 100: plugins.PluginHTTPRequest
-	(*PluginHTTPResponse)(nil),         // 101: plugins.PluginHTTPResponse
-	(*CallPluginRequest)(nil),          // 102: plugins.CallPluginRequest
-	(*CallPluginResponse)(nil),         // 103: plugins.CallPluginResponse
-	(*AddonTypeInfo)(nil),              // 104: plugins.AddonTypeInfo
-	(*AddonTypeRequest)(nil),           // 105: plugins.AddonTypeRequest
-	(*AddonTypeResponse)(nil),          // 106: plugins.AddonTypeResponse
-	(*AddonInstallAction)(nil),         // 107: plugins.AddonInstallAction
-	nil,                                // 108: plugins.Event.DataEntry
-	nil,                                // 109: plugins.HTTPRequest.HeadersEntry
-	nil,                                // 110: plugins.HTTPRequest.QueryEntry
-	nil,                                // 111: plugins.HTTPResponse.HeadersEntry
-	nil,                                // 112: plugins.UpdateVariablesRequest.VariablesEntry
-	nil,                                // 113: plugins.BroadcastEventRequest.DataEntry
-	nil,                                // 114: plugins.PluginHTTPRequest.HeadersEntry
-	nil,                                // 115: plugins.PluginHTTPResponse.HeadersEntry
-	nil,                                // 116: plugins.AddonTypeRequest.SourceInfoEntry
-	nil,                                // 117: plugins.AddonTypeRequest.ServerVariablesEntry
-	nil,                                // 118: plugins.AddonInstallAction.HeadersEntry
+	(*RateLimitConfig)(nil),            // 20: plugins.RateLimitConfig
+	(*ScheduleInfo)(nil),               // 21: plugins.ScheduleInfo
+	(*Event)(nil),                      // 22: plugins.Event
+	(*EventResponse)(nil),              // 23: plugins.EventResponse
+	(*HTTPRequest)(nil),                // 24: plugins.HTTPRequest
+	(*HTTPResponse)(nil),               // 25: plugins.HTTPResponse
+	(*ScheduleRequest)(nil),            // 26: plugins.ScheduleRequest
+	(*Server)(nil),                     // 27: plugins.Server
+	(*ListServersRequest)(nil),         // 28: plugins.ListServersRequest
+	(*ListServersResponse)(nil),        // 29: plugins.ListServersResponse
+	(*CreateServerRequest)(nil),        // 30: plugins.CreateServerRequest
+	(*UpdateServerRequest)(nil),        // 31: plugins.UpdateServerRequest
+	(*TransferServerRequest)(nil),      // 32: plugins.TransferServerRequest
+	(*ConsoleLogRequest)(nil),          // 33: plugins.ConsoleLogRequest
+	(*ConsoleLogResponse)(nil),         // 34: plugins.ConsoleLogResponse
+	(*SendCommandRequest)(nil),         // 35: plugins.SendCommandRequest
+	(*ServerStats)(nil),                // 36: plugins.ServerStats
+	(*AllocationRequest)(nil),          // 37: plugins.AllocationRequest
+	(*CompressRequest)(nil),            // 38: plugins.CompressRequest
+	(*UpdateVariablesRequest)(nil),     // 39: plugins.UpdateVariablesRequest
+	(*StreamConsoleRequest)(nil),       // 40: plugins.StreamConsoleRequest
+	(*ConsoleLine)(nil),                // 41: plugins.ConsoleLine
+	(*FullLogResponse)(nil),            // 42: plugins.FullLogResponse
+	(*SearchLogsRequest)(nil),          // 43: plugins.SearchLogsRequest
+	(*SearchLogsResponse)(nil),         // 44: plugins.SearchLogsResponse
+	(*LogMatch)(nil),                   // 45: plugins.LogMatch
+	(*LogFilesResponse)(nil),           // 46: plugins.LogFilesResponse
+	(*LogFileInfo)(nil),                // 47: plugins.LogFileInfo
+	(*ReadLogFileRequest)(nil),         // 48: plugins.ReadLogFileRequest
+	(*User)(nil),                       // 49: plugins.User
+	(*ListUsersRequest)(nil),           // 50: plugins.ListUsersRequest
+	(*ListUsersResponse)(nil),          // 51: plugins.ListUsersResponse
+	(*CreateUserRequest)(nil),          // 52: plugins.CreateUserRequest
+	(*UpdateUserRequest)(nil),          // 53: plugins.UpdateUserRequest
+	(*SetUserResourcesRequest)(nil),    // 54: plugins.SetUserResourcesRequest
+	(*Subuser)(nil),                    // 55: plugins.Subuser
+	(*ListSubusersResponse)(nil),       // 56: plugins.ListSubusersResponse
+	(*AddSubuserRequest)(nil),          // 57: plugins.AddSubuserRequest
+	(*UpdateSubuserRequest)(nil),       // 58: plugins.UpdateSubuserRequest
+	(*RemoveSubuserRequest)(nil),       // 59: plugins.RemoveSubuserRequest
+	(*Database)(nil),                   // 60: plugins.Database
+	(*ListDatabasesResponse)(nil),      // 61: plugins.ListDatabasesResponse
+	(*CreateDatabaseRequest)(nil),      // 62: plugins.CreateDatabaseRequest
+	(*DatabaseHost)(nil),               // 63: plugins.DatabaseHost
+	(*ListDatabaseHostsResponse)(nil),  // 64: plugins.ListDatabaseHostsResponse
+	(*CreateDatabaseHostRequest)(nil),  // 65: plugins.CreateDatabaseHostRequest
+	(*UpdateDatabaseHostRequest)(nil),  // 66: plugins.UpdateDatabaseHostRequest
+	(*FileInfo)(nil),                   // 67: plugins.FileInfo
+	(*ListFilesResponse)(nil),          // 68: plugins.ListFilesResponse
+	(*FilePathRequest)(nil),            // 69: plugins.FilePathRequest
+	(*FileContent)(nil),                // 70: plugins.FileContent
+	(*WriteFileRequest)(nil),           // 71: plugins.WriteFileRequest
+	(*MoveFileRequest)(nil),            // 72: plugins.MoveFileRequest
+	(*Backup)(nil),                     // 73: plugins.Backup
+	(*ListBackupsResponse)(nil),        // 74: plugins.ListBackupsResponse
+	(*CreateBackupRequest)(nil),        // 75: plugins.CreateBackupRequest
+	(*DeleteBackupRequest)(nil),        // 76: plugins.DeleteBackupRequest
+	(*Node)(nil),                       // 77: plugins.Node
+	(*ListNodesResponse)(nil),          // 78: plugins.ListNodesResponse
+	(*CreateNodeRequest)(nil),          // 79: plugins.CreateNodeRequest
+	(*NodeWithToken)(nil),              // 80: plugins.NodeWithToken
+	(*NodeToken)(nil),                  // 81: plugins.NodeToken
+	(*Package)(nil),                    // 82: plugins.Package
+	(*ListPackagesResponse)(nil),       // 83: plugins.ListPackagesResponse
+	(*CreatePackageRequest)(nil),       // 84: plugins.CreatePackageRequest
+	(*UpdatePackageRequest)(nil),       // 85: plugins.UpdatePackageRequest
+	(*IPBan)(nil),                      // 86: plugins.IPBan
+	(*ListIPBansResponse)(nil),         // 87: plugins.ListIPBansResponse
+	(*CreateIPBanRequest)(nil),         // 88: plugins.CreateIPBanRequest
+	(*Settings)(nil),                   // 89: plugins.Settings
+	(*ActivityLog)(nil),                // 90: plugins.ActivityLog
+	(*GetLogsRequest)(nil),             // 91: plugins.GetLogsRequest
+	(*GetLogsResponse)(nil),            // 92: plugins.GetLogsResponse
+	(*LogRequest)(nil),                 // 93: plugins.LogRequest
+	(*KVRequest)(nil),                  // 94: plugins.KVRequest
+	(*KVResponse)(nil),                 // 95: plugins.KVResponse
+	(*KVSetRequest)(nil),               // 96: plugins.KVSetRequest
+	(*QueryDBRequest)(nil),             // 97: plugins.QueryDBRequest
+	(*QueryDBResponse)(nil),            // 98: plugins.QueryDBResponse
+	(*BroadcastEventRequest)(nil),      // 99: plugins.BroadcastEventRequest
+	(*NotificationRequest)(nil),        // 100: plugins.NotificationRequest
+	(*PluginHTTPRequest)(nil),          // 101: plugins.PluginHTTPRequest
+	(*PluginHTTPResponse)(nil),         // 102: plugins.PluginHTTPResponse
+	(*CallPluginRequest)(nil),          // 103: plugins.CallPluginRequest
+	(*CallPluginResponse)(nil),         // 104: plugins.CallPluginResponse
+	(*AddonTypeInfo)(nil),              // 105: plugins.AddonTypeInfo
+	(*AddonTypeRequest)(nil),           // 106: plugins.AddonTypeRequest
+	(*AddonTypeResponse)(nil),          // 107: plugins.AddonTypeResponse
+	(*AddonInstallAction)(nil),         // 108: plugins.AddonInstallAction
+	nil,                                // 109: plugins.Event.DataEntry
+	nil,                                // 110: plugins.HTTPRequest.HeadersEntry
+	nil,                                // 111: plugins.HTTPRequest.QueryEntry
+	nil,                                // 112: plugins.HTTPResponse.HeadersEntry
+	nil,                                // 113: plugins.UpdateVariablesRequest.VariablesEntry
+	nil,                                // 114: plugins.BroadcastEventRequest.DataEntry
+	nil,                                // 115: plugins.PluginHTTPRequest.HeadersEntry
+	nil,                                // 116: plugins.PluginHTTPResponse.HeadersEntry
+	nil,                                // 117: plugins.AddonTypeRequest.SourceInfoEntry
+	nil,                                // 118: plugins.AddonTypeRequest.ServerVariablesEntry
+	nil,                                // 119: plugins.AddonInstallAction.HeadersEntry
 }
-var file_Birdactyl_Go_SDK_main_proto_plugin_proto_depIdxs = []int32{
+var file_plugin_proto_depIdxs = []int32{
 	9,   // 0: plugins.PluginMessage.register:type_name -> plugins.PluginInfo
-	22,  // 1: plugins.PluginMessage.event_response:type_name -> plugins.EventResponse
-	24,  // 2: plugins.PluginMessage.http_response:type_name -> plugins.HTTPResponse
+	23,  // 1: plugins.PluginMessage.event_response:type_name -> plugins.EventResponse
+	25,  // 2: plugins.PluginMessage.http_response:type_name -> plugins.HTTPResponse
 	4,   // 3: plugins.PluginMessage.schedule_response:type_name -> plugins.Empty
 	17,  // 4: plugins.PluginMessage.mixin_response:type_name -> plugins.MixinResponse
-	106, // 5: plugins.PluginMessage.addon_type_response:type_name -> plugins.AddonTypeResponse
+	107, // 5: plugins.PluginMessage.addon_type_response:type_name -> plugins.AddonTypeResponse
 	4,   // 6: plugins.PanelMessage.registered:type_name -> plugins.Empty
-	21,  // 7: plugins.PanelMessage.event:type_name -> plugins.Event
-	23,  // 8: plugins.PanelMessage.http:type_name -> plugins.HTTPRequest
-	25,  // 9: plugins.PanelMessage.schedule:type_name -> plugins.ScheduleRequest
+	22,  // 7: plugins.PanelMessage.event:type_name -> plugins.Event
+	24,  // 8: plugins.PanelMessage.http:type_name -> plugins.HTTPRequest
+	26,  // 9: plugins.PanelMessage.schedule:type_name -> plugins.ScheduleRequest
 	16,  // 10: plugins.PanelMessage.mixin:type_name -> plugins.MixinRequest
 	4,   // 11: plugins.PanelMessage.shutdown:type_name -> plugins.Empty
-	105, // 12: plugins.PanelMessage.addon_type:type_name -> plugins.AddonTypeRequest
+	106, // 12: plugins.PanelMessage.addon_type:type_name -> plugins.AddonTypeRequest
 	19,  // 13: plugins.PluginInfo.routes:type_name -> plugins.RouteInfo
-	20,  // 14: plugins.PluginInfo.schedules:type_name -> plugins.ScheduleInfo
+	21,  // 14: plugins.PluginInfo.schedules:type_name -> plugins.ScheduleInfo
 	15,  // 15: plugins.PluginInfo.mixins:type_name -> plugins.MixinInfo
-	104, // 16: plugins.PluginInfo.addon_types:type_name -> plugins.AddonTypeInfo
+	105, // 16: plugins.PluginInfo.addon_types:type_name -> plugins.AddonTypeInfo
 	10,  // 17: plugins.PluginInfo.ui:type_name -> plugins.PluginUIInfo
 	11,  // 18: plugins.PluginUIInfo.pages:type_name -> plugins.PluginUIPage
 	12,  // 19: plugins.PluginUIInfo.tabs:type_name -> plugins.PluginUITab
@@ -8020,236 +8096,237 @@ var file_Birdactyl_Go_SDK_main_proto_plugin_proto_depIdxs = []int32{
 	14,  // 21: plugins.PluginUISidebarItem.children:type_name -> plugins.PluginUISidebarChild
 	0,   // 22: plugins.MixinResponse.action:type_name -> plugins.MixinResponse.Action
 	18,  // 23: plugins.MixinResponse.notifications:type_name -> plugins.Notification
-	108, // 24: plugins.Event.data:type_name -> plugins.Event.DataEntry
-	109, // 25: plugins.HTTPRequest.headers:type_name -> plugins.HTTPRequest.HeadersEntry
-	110, // 26: plugins.HTTPRequest.query:type_name -> plugins.HTTPRequest.QueryEntry
-	111, // 27: plugins.HTTPResponse.headers:type_name -> plugins.HTTPResponse.HeadersEntry
-	26,  // 28: plugins.ListServersResponse.servers:type_name -> plugins.Server
-	112, // 29: plugins.UpdateVariablesRequest.variables:type_name -> plugins.UpdateVariablesRequest.VariablesEntry
-	44,  // 30: plugins.SearchLogsResponse.matches:type_name -> plugins.LogMatch
-	46,  // 31: plugins.LogFilesResponse.files:type_name -> plugins.LogFileInfo
-	48,  // 32: plugins.ListUsersResponse.users:type_name -> plugins.User
-	54,  // 33: plugins.ListSubusersResponse.subusers:type_name -> plugins.Subuser
-	59,  // 34: plugins.ListDatabasesResponse.databases:type_name -> plugins.Database
-	62,  // 35: plugins.ListDatabaseHostsResponse.hosts:type_name -> plugins.DatabaseHost
-	66,  // 36: plugins.ListFilesResponse.files:type_name -> plugins.FileInfo
-	72,  // 37: plugins.ListBackupsResponse.backups:type_name -> plugins.Backup
-	76,  // 38: plugins.ListNodesResponse.nodes:type_name -> plugins.Node
-	76,  // 39: plugins.NodeWithToken.node:type_name -> plugins.Node
-	81,  // 40: plugins.ListPackagesResponse.packages:type_name -> plugins.Package
-	85,  // 41: plugins.ListIPBansResponse.bans:type_name -> plugins.IPBan
-	89,  // 42: plugins.GetLogsResponse.logs:type_name -> plugins.ActivityLog
-	113, // 43: plugins.BroadcastEventRequest.data:type_name -> plugins.BroadcastEventRequest.DataEntry
-	114, // 44: plugins.PluginHTTPRequest.headers:type_name -> plugins.PluginHTTPRequest.HeadersEntry
-	115, // 45: plugins.PluginHTTPResponse.headers:type_name -> plugins.PluginHTTPResponse.HeadersEntry
-	116, // 46: plugins.AddonTypeRequest.source_info:type_name -> plugins.AddonTypeRequest.SourceInfoEntry
-	117, // 47: plugins.AddonTypeRequest.server_variables:type_name -> plugins.AddonTypeRequest.ServerVariablesEntry
-	107, // 48: plugins.AddonTypeResponse.actions:type_name -> plugins.AddonInstallAction
-	1,   // 49: plugins.AddonInstallAction.type:type_name -> plugins.AddonInstallAction.ActionType
-	118, // 50: plugins.AddonInstallAction.headers:type_name -> plugins.AddonInstallAction.HeadersEntry
-	4,   // 51: plugins.PluginService.GetInfo:input_type -> plugins.Empty
-	21,  // 52: plugins.PluginService.OnEvent:input_type -> plugins.Event
-	23,  // 53: plugins.PluginService.OnHTTP:input_type -> plugins.HTTPRequest
-	25,  // 54: plugins.PluginService.OnSchedule:input_type -> plugins.ScheduleRequest
-	16,  // 55: plugins.PluginService.OnMixin:input_type -> plugins.MixinRequest
-	4,   // 56: plugins.PluginService.Shutdown:input_type -> plugins.Empty
-	2,   // 57: plugins.PanelService.Connect:input_type -> plugins.PluginMessage
-	5,   // 58: plugins.PanelService.GetServer:input_type -> plugins.IDRequest
-	27,  // 59: plugins.PanelService.ListServers:input_type -> plugins.ListServersRequest
-	29,  // 60: plugins.PanelService.CreateServer:input_type -> plugins.CreateServerRequest
-	5,   // 61: plugins.PanelService.DeleteServer:input_type -> plugins.IDRequest
-	30,  // 62: plugins.PanelService.UpdateServer:input_type -> plugins.UpdateServerRequest
-	5,   // 63: plugins.PanelService.SuspendServer:input_type -> plugins.IDRequest
-	5,   // 64: plugins.PanelService.UnsuspendServer:input_type -> plugins.IDRequest
-	5,   // 65: plugins.PanelService.StartServer:input_type -> plugins.IDRequest
-	5,   // 66: plugins.PanelService.StopServer:input_type -> plugins.IDRequest
-	5,   // 67: plugins.PanelService.RestartServer:input_type -> plugins.IDRequest
-	5,   // 68: plugins.PanelService.KillServer:input_type -> plugins.IDRequest
-	5,   // 69: plugins.PanelService.ReinstallServer:input_type -> plugins.IDRequest
-	31,  // 70: plugins.PanelService.TransferServer:input_type -> plugins.TransferServerRequest
-	32,  // 71: plugins.PanelService.GetConsoleLog:input_type -> plugins.ConsoleLogRequest
-	34,  // 72: plugins.PanelService.SendCommand:input_type -> plugins.SendCommandRequest
-	39,  // 73: plugins.PanelService.StreamConsole:input_type -> plugins.StreamConsoleRequest
-	5,   // 74: plugins.PanelService.GetFullLog:input_type -> plugins.IDRequest
-	42,  // 75: plugins.PanelService.SearchLogs:input_type -> plugins.SearchLogsRequest
-	5,   // 76: plugins.PanelService.ListLogFiles:input_type -> plugins.IDRequest
-	47,  // 77: plugins.PanelService.ReadLogFile:input_type -> plugins.ReadLogFileRequest
-	5,   // 78: plugins.PanelService.GetServerStats:input_type -> plugins.IDRequest
-	36,  // 79: plugins.PanelService.AddAllocation:input_type -> plugins.AllocationRequest
-	36,  // 80: plugins.PanelService.DeleteAllocation:input_type -> plugins.AllocationRequest
-	36,  // 81: plugins.PanelService.SetPrimaryAllocation:input_type -> plugins.AllocationRequest
-	38,  // 82: plugins.PanelService.UpdateServerVariables:input_type -> plugins.UpdateVariablesRequest
-	5,   // 83: plugins.PanelService.GetUser:input_type -> plugins.IDRequest
-	6,   // 84: plugins.PanelService.GetUserByEmail:input_type -> plugins.EmailRequest
-	7,   // 85: plugins.PanelService.GetUserByUsername:input_type -> plugins.UsernameRequest
-	49,  // 86: plugins.PanelService.ListUsers:input_type -> plugins.ListUsersRequest
-	51,  // 87: plugins.PanelService.CreateUser:input_type -> plugins.CreateUserRequest
-	5,   // 88: plugins.PanelService.DeleteUser:input_type -> plugins.IDRequest
-	52,  // 89: plugins.PanelService.UpdateUser:input_type -> plugins.UpdateUserRequest
-	5,   // 90: plugins.PanelService.BanUser:input_type -> plugins.IDRequest
-	5,   // 91: plugins.PanelService.UnbanUser:input_type -> plugins.IDRequest
-	5,   // 92: plugins.PanelService.SetAdmin:input_type -> plugins.IDRequest
-	5,   // 93: plugins.PanelService.RevokeAdmin:input_type -> plugins.IDRequest
-	53,  // 94: plugins.PanelService.SetUserResources:input_type -> plugins.SetUserResourcesRequest
-	5,   // 95: plugins.PanelService.ForcePasswordReset:input_type -> plugins.IDRequest
-	5,   // 96: plugins.PanelService.ListSubusers:input_type -> plugins.IDRequest
-	56,  // 97: plugins.PanelService.AddSubuser:input_type -> plugins.AddSubuserRequest
-	57,  // 98: plugins.PanelService.UpdateSubuser:input_type -> plugins.UpdateSubuserRequest
-	58,  // 99: plugins.PanelService.RemoveSubuser:input_type -> plugins.RemoveSubuserRequest
-	5,   // 100: plugins.PanelService.ListDatabases:input_type -> plugins.IDRequest
-	61,  // 101: plugins.PanelService.CreateDatabase:input_type -> plugins.CreateDatabaseRequest
-	5,   // 102: plugins.PanelService.DeleteDatabase:input_type -> plugins.IDRequest
-	5,   // 103: plugins.PanelService.RotateDatabasePassword:input_type -> plugins.IDRequest
-	4,   // 104: plugins.PanelService.ListDatabaseHosts:input_type -> plugins.Empty
-	64,  // 105: plugins.PanelService.CreateDatabaseHost:input_type -> plugins.CreateDatabaseHostRequest
-	65,  // 106: plugins.PanelService.UpdateDatabaseHost:input_type -> plugins.UpdateDatabaseHostRequest
-	5,   // 107: plugins.PanelService.DeleteDatabaseHost:input_type -> plugins.IDRequest
-	68,  // 108: plugins.PanelService.ListFiles:input_type -> plugins.FilePathRequest
-	68,  // 109: plugins.PanelService.ReadFile:input_type -> plugins.FilePathRequest
-	70,  // 110: plugins.PanelService.WriteFile:input_type -> plugins.WriteFileRequest
-	68,  // 111: plugins.PanelService.DeleteFile:input_type -> plugins.FilePathRequest
-	68,  // 112: plugins.PanelService.CreateFolder:input_type -> plugins.FilePathRequest
-	71,  // 113: plugins.PanelService.MoveFile:input_type -> plugins.MoveFileRequest
-	71,  // 114: plugins.PanelService.CopyFile:input_type -> plugins.MoveFileRequest
-	37,  // 115: plugins.PanelService.CompressFiles:input_type -> plugins.CompressRequest
-	68,  // 116: plugins.PanelService.DecompressFile:input_type -> plugins.FilePathRequest
-	5,   // 117: plugins.PanelService.ListBackups:input_type -> plugins.IDRequest
-	74,  // 118: plugins.PanelService.CreateBackup:input_type -> plugins.CreateBackupRequest
-	75,  // 119: plugins.PanelService.DeleteBackup:input_type -> plugins.DeleteBackupRequest
-	4,   // 120: plugins.PanelService.ListNodes:input_type -> plugins.Empty
-	5,   // 121: plugins.PanelService.GetNode:input_type -> plugins.IDRequest
-	78,  // 122: plugins.PanelService.CreateNode:input_type -> plugins.CreateNodeRequest
-	5,   // 123: plugins.PanelService.DeleteNode:input_type -> plugins.IDRequest
-	5,   // 124: plugins.PanelService.ResetNodeToken:input_type -> plugins.IDRequest
-	4,   // 125: plugins.PanelService.ListPackages:input_type -> plugins.Empty
-	5,   // 126: plugins.PanelService.GetPackage:input_type -> plugins.IDRequest
-	83,  // 127: plugins.PanelService.CreatePackage:input_type -> plugins.CreatePackageRequest
-	84,  // 128: plugins.PanelService.UpdatePackage:input_type -> plugins.UpdatePackageRequest
-	5,   // 129: plugins.PanelService.DeletePackage:input_type -> plugins.IDRequest
-	4,   // 130: plugins.PanelService.ListIPBans:input_type -> plugins.Empty
-	87,  // 131: plugins.PanelService.CreateIPBan:input_type -> plugins.CreateIPBanRequest
-	5,   // 132: plugins.PanelService.DeleteIPBan:input_type -> plugins.IDRequest
-	4,   // 133: plugins.PanelService.GetSettings:input_type -> plugins.Empty
-	8,   // 134: plugins.PanelService.SetRegistrationEnabled:input_type -> plugins.BoolRequest
-	8,   // 135: plugins.PanelService.SetServerCreationEnabled:input_type -> plugins.BoolRequest
-	90,  // 136: plugins.PanelService.GetActivityLogs:input_type -> plugins.GetLogsRequest
-	92,  // 137: plugins.PanelService.Log:input_type -> plugins.LogRequest
-	93,  // 138: plugins.PanelService.GetKV:input_type -> plugins.KVRequest
-	95,  // 139: plugins.PanelService.SetKV:input_type -> plugins.KVSetRequest
-	93,  // 140: plugins.PanelService.DeleteKV:input_type -> plugins.KVRequest
-	96,  // 141: plugins.PanelService.QueryDB:input_type -> plugins.QueryDBRequest
-	98,  // 142: plugins.PanelService.BroadcastEvent:input_type -> plugins.BroadcastEventRequest
-	99,  // 143: plugins.PanelService.SendNotification:input_type -> plugins.NotificationRequest
-	100, // 144: plugins.PanelService.HTTPRequest:input_type -> plugins.PluginHTTPRequest
-	102, // 145: plugins.PanelService.CallPlugin:input_type -> plugins.CallPluginRequest
-	9,   // 146: plugins.PluginService.GetInfo:output_type -> plugins.PluginInfo
-	22,  // 147: plugins.PluginService.OnEvent:output_type -> plugins.EventResponse
-	24,  // 148: plugins.PluginService.OnHTTP:output_type -> plugins.HTTPResponse
-	4,   // 149: plugins.PluginService.OnSchedule:output_type -> plugins.Empty
-	17,  // 150: plugins.PluginService.OnMixin:output_type -> plugins.MixinResponse
-	4,   // 151: plugins.PluginService.Shutdown:output_type -> plugins.Empty
-	3,   // 152: plugins.PanelService.Connect:output_type -> plugins.PanelMessage
-	26,  // 153: plugins.PanelService.GetServer:output_type -> plugins.Server
-	28,  // 154: plugins.PanelService.ListServers:output_type -> plugins.ListServersResponse
-	26,  // 155: plugins.PanelService.CreateServer:output_type -> plugins.Server
-	4,   // 156: plugins.PanelService.DeleteServer:output_type -> plugins.Empty
-	26,  // 157: plugins.PanelService.UpdateServer:output_type -> plugins.Server
-	4,   // 158: plugins.PanelService.SuspendServer:output_type -> plugins.Empty
-	4,   // 159: plugins.PanelService.UnsuspendServer:output_type -> plugins.Empty
-	4,   // 160: plugins.PanelService.StartServer:output_type -> plugins.Empty
-	4,   // 161: plugins.PanelService.StopServer:output_type -> plugins.Empty
-	4,   // 162: plugins.PanelService.RestartServer:output_type -> plugins.Empty
-	4,   // 163: plugins.PanelService.KillServer:output_type -> plugins.Empty
-	4,   // 164: plugins.PanelService.ReinstallServer:output_type -> plugins.Empty
-	4,   // 165: plugins.PanelService.TransferServer:output_type -> plugins.Empty
-	33,  // 166: plugins.PanelService.GetConsoleLog:output_type -> plugins.ConsoleLogResponse
-	4,   // 167: plugins.PanelService.SendCommand:output_type -> plugins.Empty
-	40,  // 168: plugins.PanelService.StreamConsole:output_type -> plugins.ConsoleLine
-	41,  // 169: plugins.PanelService.GetFullLog:output_type -> plugins.FullLogResponse
-	43,  // 170: plugins.PanelService.SearchLogs:output_type -> plugins.SearchLogsResponse
-	45,  // 171: plugins.PanelService.ListLogFiles:output_type -> plugins.LogFilesResponse
-	41,  // 172: plugins.PanelService.ReadLogFile:output_type -> plugins.FullLogResponse
-	35,  // 173: plugins.PanelService.GetServerStats:output_type -> plugins.ServerStats
-	4,   // 174: plugins.PanelService.AddAllocation:output_type -> plugins.Empty
-	4,   // 175: plugins.PanelService.DeleteAllocation:output_type -> plugins.Empty
-	4,   // 176: plugins.PanelService.SetPrimaryAllocation:output_type -> plugins.Empty
-	4,   // 177: plugins.PanelService.UpdateServerVariables:output_type -> plugins.Empty
-	48,  // 178: plugins.PanelService.GetUser:output_type -> plugins.User
-	48,  // 179: plugins.PanelService.GetUserByEmail:output_type -> plugins.User
-	48,  // 180: plugins.PanelService.GetUserByUsername:output_type -> plugins.User
-	50,  // 181: plugins.PanelService.ListUsers:output_type -> plugins.ListUsersResponse
-	48,  // 182: plugins.PanelService.CreateUser:output_type -> plugins.User
-	4,   // 183: plugins.PanelService.DeleteUser:output_type -> plugins.Empty
-	48,  // 184: plugins.PanelService.UpdateUser:output_type -> plugins.User
-	4,   // 185: plugins.PanelService.BanUser:output_type -> plugins.Empty
-	4,   // 186: plugins.PanelService.UnbanUser:output_type -> plugins.Empty
-	4,   // 187: plugins.PanelService.SetAdmin:output_type -> plugins.Empty
-	4,   // 188: plugins.PanelService.RevokeAdmin:output_type -> plugins.Empty
-	4,   // 189: plugins.PanelService.SetUserResources:output_type -> plugins.Empty
-	4,   // 190: plugins.PanelService.ForcePasswordReset:output_type -> plugins.Empty
-	55,  // 191: plugins.PanelService.ListSubusers:output_type -> plugins.ListSubusersResponse
-	54,  // 192: plugins.PanelService.AddSubuser:output_type -> plugins.Subuser
-	4,   // 193: plugins.PanelService.UpdateSubuser:output_type -> plugins.Empty
-	4,   // 194: plugins.PanelService.RemoveSubuser:output_type -> plugins.Empty
-	60,  // 195: plugins.PanelService.ListDatabases:output_type -> plugins.ListDatabasesResponse
-	59,  // 196: plugins.PanelService.CreateDatabase:output_type -> plugins.Database
-	4,   // 197: plugins.PanelService.DeleteDatabase:output_type -> plugins.Empty
-	59,  // 198: plugins.PanelService.RotateDatabasePassword:output_type -> plugins.Database
-	63,  // 199: plugins.PanelService.ListDatabaseHosts:output_type -> plugins.ListDatabaseHostsResponse
-	62,  // 200: plugins.PanelService.CreateDatabaseHost:output_type -> plugins.DatabaseHost
-	4,   // 201: plugins.PanelService.UpdateDatabaseHost:output_type -> plugins.Empty
-	4,   // 202: plugins.PanelService.DeleteDatabaseHost:output_type -> plugins.Empty
-	67,  // 203: plugins.PanelService.ListFiles:output_type -> plugins.ListFilesResponse
-	69,  // 204: plugins.PanelService.ReadFile:output_type -> plugins.FileContent
-	4,   // 205: plugins.PanelService.WriteFile:output_type -> plugins.Empty
-	4,   // 206: plugins.PanelService.DeleteFile:output_type -> plugins.Empty
-	4,   // 207: plugins.PanelService.CreateFolder:output_type -> plugins.Empty
-	4,   // 208: plugins.PanelService.MoveFile:output_type -> plugins.Empty
-	4,   // 209: plugins.PanelService.CopyFile:output_type -> plugins.Empty
-	4,   // 210: plugins.PanelService.CompressFiles:output_type -> plugins.Empty
-	4,   // 211: plugins.PanelService.DecompressFile:output_type -> plugins.Empty
-	73,  // 212: plugins.PanelService.ListBackups:output_type -> plugins.ListBackupsResponse
-	4,   // 213: plugins.PanelService.CreateBackup:output_type -> plugins.Empty
-	4,   // 214: plugins.PanelService.DeleteBackup:output_type -> plugins.Empty
-	77,  // 215: plugins.PanelService.ListNodes:output_type -> plugins.ListNodesResponse
-	76,  // 216: plugins.PanelService.GetNode:output_type -> plugins.Node
-	79,  // 217: plugins.PanelService.CreateNode:output_type -> plugins.NodeWithToken
-	4,   // 218: plugins.PanelService.DeleteNode:output_type -> plugins.Empty
-	80,  // 219: plugins.PanelService.ResetNodeToken:output_type -> plugins.NodeToken
-	82,  // 220: plugins.PanelService.ListPackages:output_type -> plugins.ListPackagesResponse
-	81,  // 221: plugins.PanelService.GetPackage:output_type -> plugins.Package
-	81,  // 222: plugins.PanelService.CreatePackage:output_type -> plugins.Package
-	81,  // 223: plugins.PanelService.UpdatePackage:output_type -> plugins.Package
-	4,   // 224: plugins.PanelService.DeletePackage:output_type -> plugins.Empty
-	86,  // 225: plugins.PanelService.ListIPBans:output_type -> plugins.ListIPBansResponse
-	85,  // 226: plugins.PanelService.CreateIPBan:output_type -> plugins.IPBan
-	4,   // 227: plugins.PanelService.DeleteIPBan:output_type -> plugins.Empty
-	88,  // 228: plugins.PanelService.GetSettings:output_type -> plugins.Settings
-	4,   // 229: plugins.PanelService.SetRegistrationEnabled:output_type -> plugins.Empty
-	4,   // 230: plugins.PanelService.SetServerCreationEnabled:output_type -> plugins.Empty
-	91,  // 231: plugins.PanelService.GetActivityLogs:output_type -> plugins.GetLogsResponse
-	4,   // 232: plugins.PanelService.Log:output_type -> plugins.Empty
-	94,  // 233: plugins.PanelService.GetKV:output_type -> plugins.KVResponse
-	4,   // 234: plugins.PanelService.SetKV:output_type -> plugins.Empty
-	4,   // 235: plugins.PanelService.DeleteKV:output_type -> plugins.Empty
-	97,  // 236: plugins.PanelService.QueryDB:output_type -> plugins.QueryDBResponse
-	4,   // 237: plugins.PanelService.BroadcastEvent:output_type -> plugins.Empty
-	4,   // 238: plugins.PanelService.SendNotification:output_type -> plugins.Empty
-	101, // 239: plugins.PanelService.HTTPRequest:output_type -> plugins.PluginHTTPResponse
-	103, // 240: plugins.PanelService.CallPlugin:output_type -> plugins.CallPluginResponse
-	146, // [146:241] is the sub-list for method output_type
-	51,  // [51:146] is the sub-list for method input_type
-	51,  // [51:51] is the sub-list for extension type_name
-	51,  // [51:51] is the sub-list for extension extendee
-	0,   // [0:51] is the sub-list for field type_name
+	20,  // 24: plugins.RouteInfo.rate_limit:type_name -> plugins.RateLimitConfig
+	109, // 25: plugins.Event.data:type_name -> plugins.Event.DataEntry
+	110, // 26: plugins.HTTPRequest.headers:type_name -> plugins.HTTPRequest.HeadersEntry
+	111, // 27: plugins.HTTPRequest.query:type_name -> plugins.HTTPRequest.QueryEntry
+	112, // 28: plugins.HTTPResponse.headers:type_name -> plugins.HTTPResponse.HeadersEntry
+	27,  // 29: plugins.ListServersResponse.servers:type_name -> plugins.Server
+	113, // 30: plugins.UpdateVariablesRequest.variables:type_name -> plugins.UpdateVariablesRequest.VariablesEntry
+	45,  // 31: plugins.SearchLogsResponse.matches:type_name -> plugins.LogMatch
+	47,  // 32: plugins.LogFilesResponse.files:type_name -> plugins.LogFileInfo
+	49,  // 33: plugins.ListUsersResponse.users:type_name -> plugins.User
+	55,  // 34: plugins.ListSubusersResponse.subusers:type_name -> plugins.Subuser
+	60,  // 35: plugins.ListDatabasesResponse.databases:type_name -> plugins.Database
+	63,  // 36: plugins.ListDatabaseHostsResponse.hosts:type_name -> plugins.DatabaseHost
+	67,  // 37: plugins.ListFilesResponse.files:type_name -> plugins.FileInfo
+	73,  // 38: plugins.ListBackupsResponse.backups:type_name -> plugins.Backup
+	77,  // 39: plugins.ListNodesResponse.nodes:type_name -> plugins.Node
+	77,  // 40: plugins.NodeWithToken.node:type_name -> plugins.Node
+	82,  // 41: plugins.ListPackagesResponse.packages:type_name -> plugins.Package
+	86,  // 42: plugins.ListIPBansResponse.bans:type_name -> plugins.IPBan
+	90,  // 43: plugins.GetLogsResponse.logs:type_name -> plugins.ActivityLog
+	114, // 44: plugins.BroadcastEventRequest.data:type_name -> plugins.BroadcastEventRequest.DataEntry
+	115, // 45: plugins.PluginHTTPRequest.headers:type_name -> plugins.PluginHTTPRequest.HeadersEntry
+	116, // 46: plugins.PluginHTTPResponse.headers:type_name -> plugins.PluginHTTPResponse.HeadersEntry
+	117, // 47: plugins.AddonTypeRequest.source_info:type_name -> plugins.AddonTypeRequest.SourceInfoEntry
+	118, // 48: plugins.AddonTypeRequest.server_variables:type_name -> plugins.AddonTypeRequest.ServerVariablesEntry
+	108, // 49: plugins.AddonTypeResponse.actions:type_name -> plugins.AddonInstallAction
+	1,   // 50: plugins.AddonInstallAction.type:type_name -> plugins.AddonInstallAction.ActionType
+	119, // 51: plugins.AddonInstallAction.headers:type_name -> plugins.AddonInstallAction.HeadersEntry
+	4,   // 52: plugins.PluginService.GetInfo:input_type -> plugins.Empty
+	22,  // 53: plugins.PluginService.OnEvent:input_type -> plugins.Event
+	24,  // 54: plugins.PluginService.OnHTTP:input_type -> plugins.HTTPRequest
+	26,  // 55: plugins.PluginService.OnSchedule:input_type -> plugins.ScheduleRequest
+	16,  // 56: plugins.PluginService.OnMixin:input_type -> plugins.MixinRequest
+	4,   // 57: plugins.PluginService.Shutdown:input_type -> plugins.Empty
+	2,   // 58: plugins.PanelService.Connect:input_type -> plugins.PluginMessage
+	5,   // 59: plugins.PanelService.GetServer:input_type -> plugins.IDRequest
+	28,  // 60: plugins.PanelService.ListServers:input_type -> plugins.ListServersRequest
+	30,  // 61: plugins.PanelService.CreateServer:input_type -> plugins.CreateServerRequest
+	5,   // 62: plugins.PanelService.DeleteServer:input_type -> plugins.IDRequest
+	31,  // 63: plugins.PanelService.UpdateServer:input_type -> plugins.UpdateServerRequest
+	5,   // 64: plugins.PanelService.SuspendServer:input_type -> plugins.IDRequest
+	5,   // 65: plugins.PanelService.UnsuspendServer:input_type -> plugins.IDRequest
+	5,   // 66: plugins.PanelService.StartServer:input_type -> plugins.IDRequest
+	5,   // 67: plugins.PanelService.StopServer:input_type -> plugins.IDRequest
+	5,   // 68: plugins.PanelService.RestartServer:input_type -> plugins.IDRequest
+	5,   // 69: plugins.PanelService.KillServer:input_type -> plugins.IDRequest
+	5,   // 70: plugins.PanelService.ReinstallServer:input_type -> plugins.IDRequest
+	32,  // 71: plugins.PanelService.TransferServer:input_type -> plugins.TransferServerRequest
+	33,  // 72: plugins.PanelService.GetConsoleLog:input_type -> plugins.ConsoleLogRequest
+	35,  // 73: plugins.PanelService.SendCommand:input_type -> plugins.SendCommandRequest
+	40,  // 74: plugins.PanelService.StreamConsole:input_type -> plugins.StreamConsoleRequest
+	5,   // 75: plugins.PanelService.GetFullLog:input_type -> plugins.IDRequest
+	43,  // 76: plugins.PanelService.SearchLogs:input_type -> plugins.SearchLogsRequest
+	5,   // 77: plugins.PanelService.ListLogFiles:input_type -> plugins.IDRequest
+	48,  // 78: plugins.PanelService.ReadLogFile:input_type -> plugins.ReadLogFileRequest
+	5,   // 79: plugins.PanelService.GetServerStats:input_type -> plugins.IDRequest
+	37,  // 80: plugins.PanelService.AddAllocation:input_type -> plugins.AllocationRequest
+	37,  // 81: plugins.PanelService.DeleteAllocation:input_type -> plugins.AllocationRequest
+	37,  // 82: plugins.PanelService.SetPrimaryAllocation:input_type -> plugins.AllocationRequest
+	39,  // 83: plugins.PanelService.UpdateServerVariables:input_type -> plugins.UpdateVariablesRequest
+	5,   // 84: plugins.PanelService.GetUser:input_type -> plugins.IDRequest
+	6,   // 85: plugins.PanelService.GetUserByEmail:input_type -> plugins.EmailRequest
+	7,   // 86: plugins.PanelService.GetUserByUsername:input_type -> plugins.UsernameRequest
+	50,  // 87: plugins.PanelService.ListUsers:input_type -> plugins.ListUsersRequest
+	52,  // 88: plugins.PanelService.CreateUser:input_type -> plugins.CreateUserRequest
+	5,   // 89: plugins.PanelService.DeleteUser:input_type -> plugins.IDRequest
+	53,  // 90: plugins.PanelService.UpdateUser:input_type -> plugins.UpdateUserRequest
+	5,   // 91: plugins.PanelService.BanUser:input_type -> plugins.IDRequest
+	5,   // 92: plugins.PanelService.UnbanUser:input_type -> plugins.IDRequest
+	5,   // 93: plugins.PanelService.SetAdmin:input_type -> plugins.IDRequest
+	5,   // 94: plugins.PanelService.RevokeAdmin:input_type -> plugins.IDRequest
+	54,  // 95: plugins.PanelService.SetUserResources:input_type -> plugins.SetUserResourcesRequest
+	5,   // 96: plugins.PanelService.ForcePasswordReset:input_type -> plugins.IDRequest
+	5,   // 97: plugins.PanelService.ListSubusers:input_type -> plugins.IDRequest
+	57,  // 98: plugins.PanelService.AddSubuser:input_type -> plugins.AddSubuserRequest
+	58,  // 99: plugins.PanelService.UpdateSubuser:input_type -> plugins.UpdateSubuserRequest
+	59,  // 100: plugins.PanelService.RemoveSubuser:input_type -> plugins.RemoveSubuserRequest
+	5,   // 101: plugins.PanelService.ListDatabases:input_type -> plugins.IDRequest
+	62,  // 102: plugins.PanelService.CreateDatabase:input_type -> plugins.CreateDatabaseRequest
+	5,   // 103: plugins.PanelService.DeleteDatabase:input_type -> plugins.IDRequest
+	5,   // 104: plugins.PanelService.RotateDatabasePassword:input_type -> plugins.IDRequest
+	4,   // 105: plugins.PanelService.ListDatabaseHosts:input_type -> plugins.Empty
+	65,  // 106: plugins.PanelService.CreateDatabaseHost:input_type -> plugins.CreateDatabaseHostRequest
+	66,  // 107: plugins.PanelService.UpdateDatabaseHost:input_type -> plugins.UpdateDatabaseHostRequest
+	5,   // 108: plugins.PanelService.DeleteDatabaseHost:input_type -> plugins.IDRequest
+	69,  // 109: plugins.PanelService.ListFiles:input_type -> plugins.FilePathRequest
+	69,  // 110: plugins.PanelService.ReadFile:input_type -> plugins.FilePathRequest
+	71,  // 111: plugins.PanelService.WriteFile:input_type -> plugins.WriteFileRequest
+	69,  // 112: plugins.PanelService.DeleteFile:input_type -> plugins.FilePathRequest
+	69,  // 113: plugins.PanelService.CreateFolder:input_type -> plugins.FilePathRequest
+	72,  // 114: plugins.PanelService.MoveFile:input_type -> plugins.MoveFileRequest
+	72,  // 115: plugins.PanelService.CopyFile:input_type -> plugins.MoveFileRequest
+	38,  // 116: plugins.PanelService.CompressFiles:input_type -> plugins.CompressRequest
+	69,  // 117: plugins.PanelService.DecompressFile:input_type -> plugins.FilePathRequest
+	5,   // 118: plugins.PanelService.ListBackups:input_type -> plugins.IDRequest
+	75,  // 119: plugins.PanelService.CreateBackup:input_type -> plugins.CreateBackupRequest
+	76,  // 120: plugins.PanelService.DeleteBackup:input_type -> plugins.DeleteBackupRequest
+	4,   // 121: plugins.PanelService.ListNodes:input_type -> plugins.Empty
+	5,   // 122: plugins.PanelService.GetNode:input_type -> plugins.IDRequest
+	79,  // 123: plugins.PanelService.CreateNode:input_type -> plugins.CreateNodeRequest
+	5,   // 124: plugins.PanelService.DeleteNode:input_type -> plugins.IDRequest
+	5,   // 125: plugins.PanelService.ResetNodeToken:input_type -> plugins.IDRequest
+	4,   // 126: plugins.PanelService.ListPackages:input_type -> plugins.Empty
+	5,   // 127: plugins.PanelService.GetPackage:input_type -> plugins.IDRequest
+	84,  // 128: plugins.PanelService.CreatePackage:input_type -> plugins.CreatePackageRequest
+	85,  // 129: plugins.PanelService.UpdatePackage:input_type -> plugins.UpdatePackageRequest
+	5,   // 130: plugins.PanelService.DeletePackage:input_type -> plugins.IDRequest
+	4,   // 131: plugins.PanelService.ListIPBans:input_type -> plugins.Empty
+	88,  // 132: plugins.PanelService.CreateIPBan:input_type -> plugins.CreateIPBanRequest
+	5,   // 133: plugins.PanelService.DeleteIPBan:input_type -> plugins.IDRequest
+	4,   // 134: plugins.PanelService.GetSettings:input_type -> plugins.Empty
+	8,   // 135: plugins.PanelService.SetRegistrationEnabled:input_type -> plugins.BoolRequest
+	8,   // 136: plugins.PanelService.SetServerCreationEnabled:input_type -> plugins.BoolRequest
+	91,  // 137: plugins.PanelService.GetActivityLogs:input_type -> plugins.GetLogsRequest
+	93,  // 138: plugins.PanelService.Log:input_type -> plugins.LogRequest
+	94,  // 139: plugins.PanelService.GetKV:input_type -> plugins.KVRequest
+	96,  // 140: plugins.PanelService.SetKV:input_type -> plugins.KVSetRequest
+	94,  // 141: plugins.PanelService.DeleteKV:input_type -> plugins.KVRequest
+	97,  // 142: plugins.PanelService.QueryDB:input_type -> plugins.QueryDBRequest
+	99,  // 143: plugins.PanelService.BroadcastEvent:input_type -> plugins.BroadcastEventRequest
+	100, // 144: plugins.PanelService.SendNotification:input_type -> plugins.NotificationRequest
+	101, // 145: plugins.PanelService.HTTPRequest:input_type -> plugins.PluginHTTPRequest
+	103, // 146: plugins.PanelService.CallPlugin:input_type -> plugins.CallPluginRequest
+	9,   // 147: plugins.PluginService.GetInfo:output_type -> plugins.PluginInfo
+	23,  // 148: plugins.PluginService.OnEvent:output_type -> plugins.EventResponse
+	25,  // 149: plugins.PluginService.OnHTTP:output_type -> plugins.HTTPResponse
+	4,   // 150: plugins.PluginService.OnSchedule:output_type -> plugins.Empty
+	17,  // 151: plugins.PluginService.OnMixin:output_type -> plugins.MixinResponse
+	4,   // 152: plugins.PluginService.Shutdown:output_type -> plugins.Empty
+	3,   // 153: plugins.PanelService.Connect:output_type -> plugins.PanelMessage
+	27,  // 154: plugins.PanelService.GetServer:output_type -> plugins.Server
+	29,  // 155: plugins.PanelService.ListServers:output_type -> plugins.ListServersResponse
+	27,  // 156: plugins.PanelService.CreateServer:output_type -> plugins.Server
+	4,   // 157: plugins.PanelService.DeleteServer:output_type -> plugins.Empty
+	27,  // 158: plugins.PanelService.UpdateServer:output_type -> plugins.Server
+	4,   // 159: plugins.PanelService.SuspendServer:output_type -> plugins.Empty
+	4,   // 160: plugins.PanelService.UnsuspendServer:output_type -> plugins.Empty
+	4,   // 161: plugins.PanelService.StartServer:output_type -> plugins.Empty
+	4,   // 162: plugins.PanelService.StopServer:output_type -> plugins.Empty
+	4,   // 163: plugins.PanelService.RestartServer:output_type -> plugins.Empty
+	4,   // 164: plugins.PanelService.KillServer:output_type -> plugins.Empty
+	4,   // 165: plugins.PanelService.ReinstallServer:output_type -> plugins.Empty
+	4,   // 166: plugins.PanelService.TransferServer:output_type -> plugins.Empty
+	34,  // 167: plugins.PanelService.GetConsoleLog:output_type -> plugins.ConsoleLogResponse
+	4,   // 168: plugins.PanelService.SendCommand:output_type -> plugins.Empty
+	41,  // 169: plugins.PanelService.StreamConsole:output_type -> plugins.ConsoleLine
+	42,  // 170: plugins.PanelService.GetFullLog:output_type -> plugins.FullLogResponse
+	44,  // 171: plugins.PanelService.SearchLogs:output_type -> plugins.SearchLogsResponse
+	46,  // 172: plugins.PanelService.ListLogFiles:output_type -> plugins.LogFilesResponse
+	42,  // 173: plugins.PanelService.ReadLogFile:output_type -> plugins.FullLogResponse
+	36,  // 174: plugins.PanelService.GetServerStats:output_type -> plugins.ServerStats
+	4,   // 175: plugins.PanelService.AddAllocation:output_type -> plugins.Empty
+	4,   // 176: plugins.PanelService.DeleteAllocation:output_type -> plugins.Empty
+	4,   // 177: plugins.PanelService.SetPrimaryAllocation:output_type -> plugins.Empty
+	4,   // 178: plugins.PanelService.UpdateServerVariables:output_type -> plugins.Empty
+	49,  // 179: plugins.PanelService.GetUser:output_type -> plugins.User
+	49,  // 180: plugins.PanelService.GetUserByEmail:output_type -> plugins.User
+	49,  // 181: plugins.PanelService.GetUserByUsername:output_type -> plugins.User
+	51,  // 182: plugins.PanelService.ListUsers:output_type -> plugins.ListUsersResponse
+	49,  // 183: plugins.PanelService.CreateUser:output_type -> plugins.User
+	4,   // 184: plugins.PanelService.DeleteUser:output_type -> plugins.Empty
+	49,  // 185: plugins.PanelService.UpdateUser:output_type -> plugins.User
+	4,   // 186: plugins.PanelService.BanUser:output_type -> plugins.Empty
+	4,   // 187: plugins.PanelService.UnbanUser:output_type -> plugins.Empty
+	4,   // 188: plugins.PanelService.SetAdmin:output_type -> plugins.Empty
+	4,   // 189: plugins.PanelService.RevokeAdmin:output_type -> plugins.Empty
+	4,   // 190: plugins.PanelService.SetUserResources:output_type -> plugins.Empty
+	4,   // 191: plugins.PanelService.ForcePasswordReset:output_type -> plugins.Empty
+	56,  // 192: plugins.PanelService.ListSubusers:output_type -> plugins.ListSubusersResponse
+	55,  // 193: plugins.PanelService.AddSubuser:output_type -> plugins.Subuser
+	4,   // 194: plugins.PanelService.UpdateSubuser:output_type -> plugins.Empty
+	4,   // 195: plugins.PanelService.RemoveSubuser:output_type -> plugins.Empty
+	61,  // 196: plugins.PanelService.ListDatabases:output_type -> plugins.ListDatabasesResponse
+	60,  // 197: plugins.PanelService.CreateDatabase:output_type -> plugins.Database
+	4,   // 198: plugins.PanelService.DeleteDatabase:output_type -> plugins.Empty
+	60,  // 199: plugins.PanelService.RotateDatabasePassword:output_type -> plugins.Database
+	64,  // 200: plugins.PanelService.ListDatabaseHosts:output_type -> plugins.ListDatabaseHostsResponse
+	63,  // 201: plugins.PanelService.CreateDatabaseHost:output_type -> plugins.DatabaseHost
+	4,   // 202: plugins.PanelService.UpdateDatabaseHost:output_type -> plugins.Empty
+	4,   // 203: plugins.PanelService.DeleteDatabaseHost:output_type -> plugins.Empty
+	68,  // 204: plugins.PanelService.ListFiles:output_type -> plugins.ListFilesResponse
+	70,  // 205: plugins.PanelService.ReadFile:output_type -> plugins.FileContent
+	4,   // 206: plugins.PanelService.WriteFile:output_type -> plugins.Empty
+	4,   // 207: plugins.PanelService.DeleteFile:output_type -> plugins.Empty
+	4,   // 208: plugins.PanelService.CreateFolder:output_type -> plugins.Empty
+	4,   // 209: plugins.PanelService.MoveFile:output_type -> plugins.Empty
+	4,   // 210: plugins.PanelService.CopyFile:output_type -> plugins.Empty
+	4,   // 211: plugins.PanelService.CompressFiles:output_type -> plugins.Empty
+	4,   // 212: plugins.PanelService.DecompressFile:output_type -> plugins.Empty
+	74,  // 213: plugins.PanelService.ListBackups:output_type -> plugins.ListBackupsResponse
+	4,   // 214: plugins.PanelService.CreateBackup:output_type -> plugins.Empty
+	4,   // 215: plugins.PanelService.DeleteBackup:output_type -> plugins.Empty
+	78,  // 216: plugins.PanelService.ListNodes:output_type -> plugins.ListNodesResponse
+	77,  // 217: plugins.PanelService.GetNode:output_type -> plugins.Node
+	80,  // 218: plugins.PanelService.CreateNode:output_type -> plugins.NodeWithToken
+	4,   // 219: plugins.PanelService.DeleteNode:output_type -> plugins.Empty
+	81,  // 220: plugins.PanelService.ResetNodeToken:output_type -> plugins.NodeToken
+	83,  // 221: plugins.PanelService.ListPackages:output_type -> plugins.ListPackagesResponse
+	82,  // 222: plugins.PanelService.GetPackage:output_type -> plugins.Package
+	82,  // 223: plugins.PanelService.CreatePackage:output_type -> plugins.Package
+	82,  // 224: plugins.PanelService.UpdatePackage:output_type -> plugins.Package
+	4,   // 225: plugins.PanelService.DeletePackage:output_type -> plugins.Empty
+	87,  // 226: plugins.PanelService.ListIPBans:output_type -> plugins.ListIPBansResponse
+	86,  // 227: plugins.PanelService.CreateIPBan:output_type -> plugins.IPBan
+	4,   // 228: plugins.PanelService.DeleteIPBan:output_type -> plugins.Empty
+	89,  // 229: plugins.PanelService.GetSettings:output_type -> plugins.Settings
+	4,   // 230: plugins.PanelService.SetRegistrationEnabled:output_type -> plugins.Empty
+	4,   // 231: plugins.PanelService.SetServerCreationEnabled:output_type -> plugins.Empty
+	92,  // 232: plugins.PanelService.GetActivityLogs:output_type -> plugins.GetLogsResponse
+	4,   // 233: plugins.PanelService.Log:output_type -> plugins.Empty
+	95,  // 234: plugins.PanelService.GetKV:output_type -> plugins.KVResponse
+	4,   // 235: plugins.PanelService.SetKV:output_type -> plugins.Empty
+	4,   // 236: plugins.PanelService.DeleteKV:output_type -> plugins.Empty
+	98,  // 237: plugins.PanelService.QueryDB:output_type -> plugins.QueryDBResponse
+	4,   // 238: plugins.PanelService.BroadcastEvent:output_type -> plugins.Empty
+	4,   // 239: plugins.PanelService.SendNotification:output_type -> plugins.Empty
+	102, // 240: plugins.PanelService.HTTPRequest:output_type -> plugins.PluginHTTPResponse
+	104, // 241: plugins.PanelService.CallPlugin:output_type -> plugins.CallPluginResponse
+	147, // [147:242] is the sub-list for method output_type
+	52,  // [52:147] is the sub-list for method input_type
+	52,  // [52:52] is the sub-list for extension type_name
+	52,  // [52:52] is the sub-list for extension extendee
+	0,   // [0:52] is the sub-list for field type_name
 }
 
-func init() { file_Birdactyl_Go_SDK_main_proto_plugin_proto_init() }
-func file_Birdactyl_Go_SDK_main_proto_plugin_proto_init() {
-	if File_Birdactyl_Go_SDK_main_proto_plugin_proto != nil {
+func init() { file_plugin_proto_init() }
+func file_plugin_proto_init() {
+	if File_plugin_proto != nil {
 		return
 	}
-	file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[0].OneofWrappers = []any{
+	file_plugin_proto_msgTypes[0].OneofWrappers = []any{
 		(*PluginMessage_Register)(nil),
 		(*PluginMessage_EventResponse)(nil),
 		(*PluginMessage_HttpResponse)(nil),
@@ -8257,7 +8334,7 @@ func file_Birdactyl_Go_SDK_main_proto_plugin_proto_init() {
 		(*PluginMessage_MixinResponse)(nil),
 		(*PluginMessage_AddonTypeResponse)(nil),
 	}
-	file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes[1].OneofWrappers = []any{
+	file_plugin_proto_msgTypes[1].OneofWrappers = []any{
 		(*PanelMessage_Registered)(nil),
 		(*PanelMessage_Event)(nil),
 		(*PanelMessage_Http)(nil),
@@ -8270,18 +8347,18 @@ func file_Birdactyl_Go_SDK_main_proto_plugin_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDesc), len(file_Birdactyl_Go_SDK_main_proto_plugin_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_plugin_proto_rawDesc), len(file_plugin_proto_rawDesc)),
 			NumEnums:      2,
-			NumMessages:   117,
+			NumMessages:   118,
 			NumExtensions: 0,
 			NumServices:   2,
 		},
-		GoTypes:           file_Birdactyl_Go_SDK_main_proto_plugin_proto_goTypes,
-		DependencyIndexes: file_Birdactyl_Go_SDK_main_proto_plugin_proto_depIdxs,
-		EnumInfos:         file_Birdactyl_Go_SDK_main_proto_plugin_proto_enumTypes,
-		MessageInfos:      file_Birdactyl_Go_SDK_main_proto_plugin_proto_msgTypes,
+		GoTypes:           file_plugin_proto_goTypes,
+		DependencyIndexes: file_plugin_proto_depIdxs,
+		EnumInfos:         file_plugin_proto_enumTypes,
+		MessageInfos:      file_plugin_proto_msgTypes,
 	}.Build()
-	File_Birdactyl_Go_SDK_main_proto_plugin_proto = out.File
-	file_Birdactyl_Go_SDK_main_proto_plugin_proto_goTypes = nil
-	file_Birdactyl_Go_SDK_main_proto_plugin_proto_depIdxs = nil
+	File_plugin_proto = out.File
+	file_plugin_proto_goTypes = nil
+	file_plugin_proto_depIdxs = nil
 }

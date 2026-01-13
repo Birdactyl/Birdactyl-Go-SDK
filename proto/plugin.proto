@@ -261,7 +261,17 @@ message Notification {
   string type = 3; // error, success, info
 }
 
-message RouteInfo { string method = 1; string path = 2; }
+message RouteInfo {
+  string method = 1;
+  string path = 2;
+  RateLimitConfig rate_limit = 3;
+}
+
+message RateLimitConfig {
+  string preset = 1;
+  int32 requests_per_minute = 2;
+  int32 burst_limit = 3;
+}
 message ScheduleInfo { string id = 1; string cron = 2; }
 
 message Event {

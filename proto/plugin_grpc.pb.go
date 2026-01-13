@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.6.0
 // - protoc             v3.21.12
-// source: Birdactyl-Go-SDK-main/proto/plugin.proto
+// source: plugin.proto
 
 package proto
 
@@ -307,7 +307,7 @@ var PluginService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "Birdactyl-Go-SDK-main/proto/plugin.proto",
+	Metadata: "plugin.proto",
 }
 
 const (
@@ -3789,5 +3789,5 @@ var PanelService_ServiceDesc = grpc.ServiceDesc{
 			ServerStreams: true,
 		},
 	},
-	Metadata: "Birdactyl-Go-SDK-main/proto/plugin.proto",
+	Metadata: "plugin.proto",
 }

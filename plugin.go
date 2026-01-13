@@ -20,7 +20,7 @@ type Plugin struct {
 	name        string
 	version     string
 	events      map[string]EventHandler
-	routes      map[string]RouteHandler
+	routes      map[string]*RouteConfig
 	schedule    map[string]ScheduleHandler
 	mixins      []MixinRegistration
 	addonTypes  map[string]AddonTypeHandler
@@ -41,13 +41,28 @@ type RouteHandler func(Request) Response
 type ScheduleHandler func()
 type AddonTypeHandler func(AddonTypeRequest) AddonTypeResponse
 
+type RouteConfig struct {
+	Method           string
+	Path             string
+	Handler          RouteHandler
+	RateLimitPreset  string
+	RateLimitRPM     int
+	RateLimitBurst   int
+}
+
+const (
+	PresetRead   = "read"
+	PresetWrite  = "write"
+	PresetStrict = "strict"
+)
+
 func New(id, version string) *Plugin {
 	return &Plugin{
 		id:         id,
 		name:       id,
 		version:    version,
 		events:     make(map[string]EventHandler),
-		routes:     make(map[string]RouteHandler),
+		routes:     make(map[string]*RouteConfig),
 		schedule:   make(map[string]ScheduleHandler),
 		mixins:     make([]MixinRegistration, 0),
 		addonTypes: make(map[string]AddonTypeHandler),
@@ -76,9 +91,29 @@ func (p *Plugin) OnEvent(eventType string, handler EventHandler) *Plugin {
 	return p
 }
 
-func (p *Plugin) Route(method, path string, handler RouteHandler) *Plugin {
-	p.routes[method+":"+path] = handler
-	return p
+func (p *Plugin) Route(method, path string, handler RouteHandler) *RouteBuilder {
+	cfg := &RouteConfig{
+		Method:  method,
+		Path:    path,
+		Handler: handler,
+	}
+	p.routes[method+":"+path] = cfg
+	return &RouteBuilder{config: cfg}
+}
+
+type RouteBuilder struct {
+	config *RouteConfig
+}
+
+func (rb *RouteBuilder) RateLimit(requestsPerMinute, burstLimit int) *RouteBuilder {
+	rb.config.RateLimitRPM = requestsPerMinute
+	rb.config.RateLimitBurst = burstLimit
+	return rb
+}
+
+func (rb *RouteBuilder) RateLimitPreset(preset string) *RouteBuilder {
+	rb.config.RateLimitPreset = preset
+	return rb
 }
 
 func (p *Plugin) Schedule(id, cron string, handler ScheduleHandler) *Plugin {
@@ -222,9 +257,16 @@ func (p *Plugin) buildInfo() *pb.PluginInfo {
 	}
 
 	routes := make([]*pb.RouteInfo, 0, len(p.routes))
-	for key := range p.routes {
-		method, path := splitKey(key)
-		routes = append(routes, &pb.RouteInfo{Method: method, Path: path})
+	for _, cfg := range p.routes {
+		route := &pb.RouteInfo{Method: cfg.Method, Path: cfg.Path}
+		if cfg.RateLimitPreset != "" || cfg.RateLimitRPM > 0 {
+			route.RateLimit = &pb.RateLimitConfig{
+				Preset:            cfg.RateLimitPreset,
+				RequestsPerMinute: int32(cfg.RateLimitRPM),
+				BurstLimit:        int32(cfg.RateLimitBurst),
+			}
+		}
+		routes = append(routes, route)
 	}
 
 	schedules := make([]*pb.ScheduleInfo, 0, len(p.schedule))
@@ -293,24 +335,23 @@ func (p *Plugin) handleEvent(ev *pb.Event) *pb.PluginMessage {
 }
 
 func (p *Plugin) handleHTTP(req *pb.HTTPRequest) *pb.PluginMessage {
-	handler, ok := p.routes[req.Method+":"+req.Path]
+	cfg, ok := p.routes[req.Method+":"+req.Path]
 	if !ok {
-		for key, h := range p.routes {
-			method, path := splitKey(key)
-			if (method == "*" || method == req.Method) && matchPath(path, req.Path) {
-				handler = h
+		for _, c := range p.routes {
+			if (c.Method == "*" || c.Method == req.Method) && matchPath(c.Path, req.Path) {
+				cfg = c
 				break
 			}
 		}
 	}
-	if handler == nil {
+	if cfg == nil {
 		return &pb.PluginMessage{Payload: &pb.PluginMessage_HttpResponse{HttpResponse: errorResponse(404, "not found")}}
 	}
 
 	var body map[string]interface{}
 	json.Unmarshal(req.Body, &body)
 
-	resp := handler(Request{
+	resp := cfg.Handler(Request{
 		Method:  req.Method,
 		Path:    req.Path,
 		Headers: req.Headers,
